@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <link rel="stylesheet" href="main.css"> -->
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="map">
+        </div>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+<script>
+// var data = []
+// , realWidth = 0
+// , width = null
+// , originalWidth = null
+// , height = 0
+// , π = Math.PI
+// , radians = π / 180
+// , degrees = 180 / π
+// , pusher = null
+// , channel = null
+// , eventWindow = 1 * 60 * 1000;
+// var svgEl = d3.select(".map svg");
+// var svg = svgEl.append('g');
+
+// function resizeGraph(){
+//     realWidth = document.body.clientWidth;
+//     width = realWidth;
+//     height = width;
+
+//     svgEl.attr("width", width).attr("height", height);
+// }
+// resizeGraph();
+
+
+
+
+
+
+var svg = d3.select("body").append("svg")
+        .attr("width",1300).attr("height",800)
+var width = 1300;
+var height = 800;
+var projection = d3.geo.mercator()
+    .scale(870)
+    .translate([width/2, 410]);
+
+var path = d3.geo.path()
+    .projection(projection)
+
+
+
+function doIt(){
+
+
+    d3.csv("small.csv", function(error, data) {
+        var bcirc = svg.selectAll("path")
+            .data(data)
+            .enter().append("svg:path")
+          .datum(function(d) {
+                    // console.log(d[0])
+                return {type: "Point", coordinates: [d[1], d[0]], radius:4 };
+          })     
+            .attr("class", "b-circ")
+            .attr("d",path) 
+            .attr("fill","grey")
+            .attr("stroke","grey")
+
+    })
+}
+
+</script>
+    </body>
+</html>
