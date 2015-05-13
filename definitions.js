@@ -70,6 +70,8 @@ function renderData()
 
 	outerCircs.enter().append("circle")
         .attr("stroke", function(d){
+        	console.log(d.type);
+        	console.log(d.color);
 			return d.color;
 		})
         .attr("fill","none")
