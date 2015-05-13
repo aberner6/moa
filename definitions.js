@@ -27,12 +27,43 @@ function renderBackground(){
 
     })
 }
-
-
+// var A = [['x','y','date']];  // initialize array of rows with header row as 1st item
+var dataIs = [];
 function renderData()
 {
+// var csvRows = [];
+
+// 	// console.log(data[0].geo.lat);
+// 	// dataIs.push(data);
+
+// 	for(var j=1; j<data.length; j++){ 
+// 	    A.push([data[j].geo.lon, Date.now()]);
+// 	}
+
+// 	var csvRows = [];
+
+// 	for(var i=0, l=A.length; i<l; ++i){
+// 	    csvRows.push(A[i].join(','));
+// 	}
+
+// 	var csvString = csvRows.join("%0A");
+// var a = document.createElement('a');
+// a.innerHTML = "Click here";
+// 	a.href        = 'data:attachment/csv,' + csvString;
+// 	a.target      = '_blank';
+// 	a.download    = 'myFile.csv';
+
+// 	document.body.appendChild(a);
+// 	a.click();
+
+
+
+
+
 	var innerCircs = svg.selectAll("innerCircs").data(data);
 	var outerCircs = svg.selectAll("outerCircs").data(data);
+
+
 
 	var now = Date.now();
 	var limit = eventWindow;
@@ -50,7 +81,10 @@ function renderData()
         .attr("fill", function(d){
 			return d.color;
 		})
-		.attr("r",3)
+        .attr("stroke", function(d){
+			return d.color;
+		})
+		.attr("r",2)
 		.attr("opacity",0)
         .attr("cx", function(d) { return d.projection[0]; })
         .attr("cy", function(d) { return d.projection[1]; })
@@ -245,8 +279,16 @@ function setTimeZone()
 
 }
 
+var names = [];
+var uniqueNames = [];
 function loadPoint(point)
 {
+	names.push(point.strategy);
+
+$.each(names, function(i, el){
+    if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
+});
+
 	if (!strategies[point.strategy]) {
 		strategies[point.strategy] = {
 			color:colors(lastColorIndex),
@@ -255,10 +297,12 @@ function loadPoint(point)
 		};
 		lastColorIndex++;
 	}
-console.log(point.strategy);
+
 	strategies[point.strategy].count++;
 
 	point.color = strategies[point.strategy].color
+	point.color = strategies[point.strategy].color
+	point.type = point.strategy;
 	point.created_at = Date.now();
 
 	point.projection = projection([point.geo.lng, point.geo.lat]);
