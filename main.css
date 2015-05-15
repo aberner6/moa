@@ -125,11 +125,11 @@ h2 {
   left: 100%;
 }
 
-.night {
+/*.night {
   stroke: #000000;
   fill: #000000;
   fill-opacity: .6;
-}
+}*/
 .opensource {
   clear: both;
   padding: 10px;

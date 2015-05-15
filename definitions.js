@@ -31,39 +31,8 @@ function renderBackground(){
 var dataIs = [];
 function renderData()
 {
-// var csvRows = [];
-
-// 	// console.log(data[0].geo.lat);
-// 	// dataIs.push(data);
-
-// 	for(var j=1; j<data.length; j++){ 
-// 	    A.push([data[j].geo.lon, Date.now()]);
-// 	}
-
-// 	var csvRows = [];
-
-// 	for(var i=0, l=A.length; i<l; ++i){
-// 	    csvRows.push(A[i].join(','));
-// 	}
-
-// 	var csvString = csvRows.join("%0A");
-// var a = document.createElement('a');
-// a.innerHTML = "Click here";
-// 	a.href        = 'data:attachment/csv,' + csvString;
-// 	a.target      = '_blank';
-// 	a.download    = 'myFile.csv';
-
-// 	document.body.appendChild(a);
-// 	a.click();
-
-
-
-
-
 	var innerCircs = svg.selectAll("innerCircs").data(data);
 	var outerCircs = svg.selectAll("outerCircs").data(data);
-
-
 
 	var now = Date.now();
 	var limit = eventWindow;
@@ -135,80 +104,6 @@ function setTimeZone()
     	d.hour = hour;
 		d.day = (hour > 8 && hour < 20);
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var w = 960,
-//     h = 500;
-
-// var gradient = svg.append("svg:defs")
-//   .append("svg:linearGradient")
-//     .attr("id", "gradient")
-//     .attr("x1", "0%")
-//     .attr("y1", "0%")
-//     .attr("x2", "100%")
-//     .attr("y2", "100%")
-//     .attr("spreadMethod", 'reflect');
-
-// gradient.append("svg:stop")
-//     .attr("offset", "10%")
-//     .attr("stop-color", "darkblue")
-//     .attr("stop-opacity", .4);
-
-// gradient.append("svg:stop")
-//     .attr("offset", "80%")
-//     .attr("stop-color", "lightblue")
-//     .attr("stop-opacity", .4);
-
-// gradient.append("svg:stop")
-//     .attr("offset", "20%")
-//     .attr("stop-color", "lightblue")
-//     .attr("stop-opacity", .4);
-
-// gradient.append("svg:stop")
-//     .attr("offset", "90%")
-//     .attr("stop-color", "darkblue")
-//     .attr("stop-opacity", .5);
-
-// svg.append("svg:rect")
-//     .attr("width", 1440)
-//     .attr("height", 40)
-//     .style("fill", "url(#gradient)");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	var tzs = svg.selectAll("rect").data(lat_tz);
 	tzs.enter().append("rect")
 		.attr('x',function(e){
@@ -226,20 +121,24 @@ function setTimeZone()
 
 	tzs.attr("fill-opacity", 1)
 	.attr("fill","none")
-		// .attr('fill','#b5f8ff');
 
-	// var tz_labels = svg.selectAll("text.tz").data(lat_tz);
-	// tz_labels.enter().append("text")
-	// 	.attr('class','tz')
-	// 	.style("text-anchor", "middle")
-	// 	.style("font-size", "10px")
-	// 	.attr('fill', 'grey')
-	// 	.attr("x", function(e){
-	// 		return e.x + e.width / 2;
-	// 	})
-	// 	.attr("y", 20);
+	var yArc1Scale = d3.scale.linear()
+		.domain([0,12])
+		.range([20,4])
+	var yArc2Scale = d3.scale.linear()
+		.domain([12,24])
+		.range([4,20])
 
-	// tz_labels.text(function(e){return e.tz;});
+	var lineAcross = svg.selectAll("lineAcross")
+	lineAcross.append("line")
+		.attr('class','lineAcross')
+		.attr('stroke', 'white')
+		.attr('fill', 'white')	
+		.attr("stroke-width",1)	
+		.attr("x1",0)
+		.attr("y1",20)
+		.attr("x2",width)
+		.attr("y2",20)
 
 	var tz_hours = svg.selectAll("text.tzh").data(lat_tz);
 	tz_hours.enter().append("text")
@@ -250,36 +149,88 @@ function setTimeZone()
 		.attr("x", function(e){
 			return e.x + e.width / 2;
 		})
-		.attr("y", 20);
+		.attr("y", function(e){
+		  //20
+		        	if(e.hour<=12){
+		        		return yArc1Scale(e.hour)+15;
+		    		}
+		        	if(e.hour>12){
+		        		return yArc2Scale(e.hour)+15;
+		    		}			
+		});
 
 	tz_hours.text(function(e){return e.hour;});
+var lineData = [];
 
 //if it is daytime, add a sun
+// if(	tz_labels.text(function(e){return e.tz;})
             var suns = svg.selectAll("img").data(lat_tz);
                 suns.enter()
             	.append("svg:image")
-                .attr("xlink:href", "/sun.png")
+                .attr("xlink:href", "/sun_white2-01.png")
 				.attr("x", function(e){
-					return e.x + (e.width / 2)-8;
+					return e.x + (e.width / 2)-12;
 				})
-		        .attr("y", "27")
-                .attr("width", "8")
-                .attr("height", "8")
-                .attr("opacity",.5)
+		        .attr("y", function(e){
+		        	// "4"
+		        	if(e.hour<=12){
+					lineData.push({x:(e.x + (e.width / 2)-12),y:yArc1Scale(e.hour)});
+		        		return yArc1Scale(e.hour)
+		    		}
+		        	if(e.hour>12){
+					lineData.push({x:(e.x + (e.width / 2)-12),y:yArc2Scale(e.hour)});
+		        		return yArc2Scale(e.hour)
+		    		}
+		        })
+                .attr("width", "25")
+                .attr("height", "25")
+                .attr("opacity",function(e){
+                	if(e.day){
+                		return .9;
+                	}else{
+                		return 0;
+                	}
+                })
 
             var moons = svg.selectAll("img").data(lat_tz);
                 moons.enter()
             	.append("svg:image")
-                .attr("xlink:href", "/moon.png")
+                .attr("xlink:href", "/moon_white2-01.png")
 				.attr("x", function(e){
-					return e.x + (e.width / 2) -3;
+					return e.x + (e.width / 2)-5;
 				})
-		        .attr("y", "30")
-                .attr("width", "8")
-                .attr("height", "8")
-                .attr("opacity",.5)
+		        .attr("y", function(e){
+		        	// "15"
+		        	if(e.hour<=12){
+		        		return yArc1Scale(e.hour)+11
+		    		}
+		        	if(e.hour>12){
+		        		return yArc2Scale(e.hour)+11
+		    		}
+		        })
+                .attr("width", "14")
+                .attr("height", "14")
+                .attr("opacity",function(e){
+                	// console.log(e);
+                	if(e.day){
+                		return 0;
+                	}else{
+                		return .7;
+                	}
+                })
 
+//This is the accessor function we talked about above
+var lineFunction = d3.svg.line()
+	.x(function(d) { return d.x; })
+	.y(function(d) { return d.y; })
+	.interpolate("cardinal");
 
+var lineGraph = svg.append("path")
+                .attr("d", lineFunction(lineData))
+			    .style("stroke-dasharray", "1,4")
+				.attr('stroke','lightgray')
+		        .attr("stroke-width", 2)
+                .attr("fill", "none");
 
 	svg.selectAll("path").moveToFront();
 	svg.selectAll("text").moveToFront();
@@ -287,38 +238,6 @@ function setTimeZone()
 
 }
 
-// var names = [];
-// var uniqueNames = [];
-// function loadPoint(point)
-// {
-// // 	names.push(point.strategy);
-
-// // $.each(names, function(i, el){
-// //     if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
-// // });
-
-// 	if (!strategies[point.strategy]) {
-// 		strategies[point.strategy] = {
-// 			color:colors(lastColorIndex),
-// 			count:0,
-// 			name:point.strategy
-// 		};
-// 		lastColorIndex++;
-// 	}
-
-// 	strategies[point.strategy].count++;
-
-// 	point.color = strategies[point.strategy].color
-// 	point.color = strategies[point.strategy].color
-// 	point.type = point.strategy;
-// 	point.created_at = Date.now();
-
-// 	point.projection = projection([point.geo.lng, point.geo.lat]);
-// 	data.push(point);
-// 	// console.log(data);
-// 	renderData();
-// 	//renderStrategies();
-// }
 function loadPoint(point)
 {
 	if (!strategies[point.strategy]) {
