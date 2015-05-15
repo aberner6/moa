@@ -35,8 +35,8 @@ function resizeGraph(){
 resizeGraph();
 
 var projection = d3.geo.mercator()
-    .scale(135 * height / 847)
-    .translate([width / 2, height / 2]);
+    .scale(175 * height / 847)
+    .translate([width / 2, height / 2.8]);
 /*
 var projection = d3.geo.equirectangular()
     .translate([width / 2, height / 2])
@@ -64,10 +64,9 @@ d3.json("world.json", function(error, world) {
 		.classed('world', true)
 		.datum( topojson.feature(world, world.objects.land) )
 		.attr("d", path)
-		// .attr("opacity",.3)
-		.attr("stroke","white")
-		.attr("stroke-width",.3)
-		// .attr("fill","white")
+		.attr("stroke","grey")
+		.attr("stroke-width",.5)
+		.attr("fill","none")
 
 	// var night = svg.append("path")
  //      .attr("class", "night")
@@ -86,11 +85,14 @@ d3.json("world.json", function(error, world) {
       .attr("fill","black")
       .attr("stroke","black")
       .attr("opacity",1)
-		.attr("x1",(circle.origin(antipode(solarPosition(new Date))))[1])
-		.attr("x2",(circle.origin(antipode(solarPosition(new Date))))[1]);
+		// .attr("x1",(circle.origin(antipode(solarPosition(new Date))))[1])
+		// .attr("x2",(circle.origin(antipode(solarPosition(new Date))))[1]);
 
 		// night.datum(circle.origin(antipode(solarPosition(new Date)))).attr("d", path);
-		setTimeZone();
+		
+
+
+		// setTimeZone();
 	}
 
 	// Pusher.log = function(message) {
@@ -99,8 +101,10 @@ d3.json("world.json", function(error, world) {
 
 	pusher = new Pusher('54da1f9bddbf14929983');
 	channel = pusher.subscribe('world_map');
-
+		// console.log(channel)
 	channel.bind('login', function(point) {
+		// console.log(point)
+
 		loadPoint(point);
 	});
 

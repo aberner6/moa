@@ -1,0 +1,2557 @@
+{
+    "Thu May 14 2015 17:10:22 GMT-0400 (EDT)": [
+        {
+            "name": "California State University-Los Angeles", 
+            "unitid": 110592, 
+            "lon": -118.168965, 
+            "subjects": 3, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 34.066927
+        }, 
+        {
+            "name": "Northeastern Illinois University", 
+            "unitid": 147776, 
+            "lon": -87.72013, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.980567
+        }, 
+        {
+            "name": "CUNY Hunter College", 
+            "unitid": 190594, 
+            "lon": -73.964795, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.768669
+        }, 
+        {
+            "name": "San Jose State University", 
+            "unitid": 122755, 
+            "lon": -121.881214, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 37.335201
+        }, 
+        {
+            "name": "University at Buffalo", 
+            "unitid": 196088, 
+            "lon": -78.78919, 
+            "subjects": 1, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 43.000416
+        }, 
+        {
+            "name": "University of Hawaii at Manoa", 
+            "unitid": 141574, 
+            "lon": -157.816607, 
+            "subjects": 3, 
+            "degrees": 22, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 21.292648
+        }, 
+        {
+            "name": "Harvard University", 
+            "unitid": 166027, 
+            "lon": -71.118177, 
+            "subjects": 3, 
+            "degrees": 17, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.374429
+        }, 
+        {
+            "name": "George Washington University", 
+            "unitid": 131469, 
+            "lon": -77.047871, 
+            "subjects": 5, 
+            "degrees": 34, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 38.89865
+        }, 
+        {
+            "name": "The University of Alabama", 
+            "unitid": 100751, 
+            "lon": -87.545766, 
+            "subjects": 2, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 33.2144
+        }, 
+        {
+            "name": "California State University-Northridge", 
+            "unitid": 110608, 
+            "lon": -118.526817, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 34.23671
+        }, 
+        {
+            "name": "Central Connecticut State University", 
+            "unitid": 128771, 
+            "lon": -72.770094, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.690258
+        }, 
+        {
+            "name": "Illinois State University", 
+            "unitid": 145813, 
+            "lon": -88.99234, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.509724
+        }, 
+        {
+            "name": "Brandeis University", 
+            "unitid": 165015, 
+            "lon": -71.254716, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.364947
+        }, 
+        {
+            "name": "Washington University in St Louis", 
+            "unitid": 179867, 
+            "lon": -90.311639, 
+            "subjects": 2, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 38.648125
+        }, 
+        {
+            "name": "Hebrew College", 
+            "unitid": 166045, 
+            "lon": -71.190525, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.3264
+        }, 
+        {
+            "name": "Trinity College", 
+            "unitid": 130590, 
+            "lon": -72.688684, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.746746
+        }, 
+        {
+            "name": "Louisiana State University and Agricultural & Mechanical College", 
+            "unitid": 159391, 
+            "lon": -91.196656, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 30.552111
+        }, 
+        {
+            "name": "Stanford University", 
+            "unitid": 243744, 
+            "lon": -122.182212, 
+            "subjects": 3, 
+            "degrees": 21, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 37.431746
+        }, 
+        {
+            "name": "Columbia University in the City of New York", 
+            "unitid": 190150, 
+            "lon": -73.961885, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.808286
+        }, 
+        {
+            "name": "Georgetown University", 
+            "unitid": 131496, 
+            "lon": -77.073463, 
+            "subjects": 3, 
+            "degrees": 59, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 38.908809
+        }, 
+        {
+            "name": "San Diego State University", 
+            "unitid": 122409, 
+            "lon": -117.071228, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 32.77525
+        }, 
+        {
+            "name": "University of California-Berkeley", 
+            "unitid": 110635, 
+            "lon": -122.260401, 
+            "subjects": 5, 
+            "degrees": 23, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 37.871519
+        }, 
+        {
+            "name": "Bowling Green State University-Main Campus", 
+            "unitid": 201441, 
+            "lon": -83.637531, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.377036
+        }, 
+        {
+            "name": "American Jewish University", 
+            "unitid": 116846, 
+            "lon": -118.471764, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 34.128099
+        }, 
+        {
+            "name": "University of Chicago", 
+            "unitid": 144050, 
+            "lon": -87.601196, 
+            "subjects": 4, 
+            "degrees": 19, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.78917
+        }, 
+        {
+            "name": "Tulane University of Louisiana", 
+            "unitid": 160755, 
+            "lon": -90.120409, 
+            "subjects": 1, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 29.939696
+        }, 
+        {
+            "name": "University of Kansas", 
+            "unitid": 155317, 
+            "lon": -95.24587, 
+            "subjects": 3, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 38.957351
+        }, 
+        {
+            "name": "Indiana University-Bloomington", 
+            "unitid": 151351, 
+            "lon": -86.526904, 
+            "subjects": 4, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 39.166383
+        }, 
+        {
+            "name": "University of Iowa", 
+            "unitid": 153658, 
+            "lon": -91.535698, 
+            "subjects": 2, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.660695
+        }, 
+        {
+            "name": "Boston College", 
+            "unitid": 164924, 
+            "lon": -71.171488, 
+            "subjects": 2, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.337688
+        }, 
+        {
+            "name": "University of California-Irvine", 
+            "unitid": 110653, 
+            "lon": -117.768639, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 33.667002
+        }, 
+        {
+            "name": "Pepperdine University", 
+            "unitid": 121150, 
+            "lon": -118.707677, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 34.041912
+        }, 
+        {
+            "name": "Howard University", 
+            "unitid": 131520, 
+            "lon": -77.019478, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 38.920739
+        }, 
+        {
+            "name": "University of California-Los Angeles", 
+            "unitid": 110662, 
+            "lon": -118.443901, 
+            "subjects": 6, 
+            "degrees": 42, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 34.068892
+        }, 
+        {
+            "name": "St. John's University-New York", 
+            "unitid": 195809, 
+            "lon": -73.795301, 
+            "subjects": 1, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.721979
+        }, 
+        {
+            "name": "CUNY Queens College", 
+            "unitid": 190664, 
+            "lon": -73.815387, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.737771
+        }, 
+        {
+            "name": "Stetson University", 
+            "unitid": 137546, 
+            "lon": -81.301604, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 29.036295
+        }, 
+        {
+            "name": "University of Illinois at Chicago", 
+            "unitid": 145600, 
+            "lon": -87.651145, 
+            "subjects": 2, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.872651
+        }, 
+        {
+            "name": "Cornell University", 
+            "unitid": 190415, 
+            "lon": -76.48269, 
+            "subjects": 2, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.445291
+        }, 
+        {
+            "name": "Florida State University", 
+            "unitid": 134097, 
+            "lon": -84.290883, 
+            "subjects": 2, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 30.439741
+        }, 
+        {
+            "name": "CUNY Brooklyn College", 
+            "unitid": 190549, 
+            "lon": -73.95312, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.631912
+        }, 
+        {
+            "name": "University of Maryland-College Park", 
+            "unitid": 163286, 
+            "lon": -76.939704, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 38.988607
+        }, 
+        {
+            "name": "Saint Louis University-Main Campus", 
+            "unitid": 179159, 
+            "lon": -90.23343, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 38.636516
+        }, 
+        {
+            "name": "Seton Hall University", 
+            "unitid": 186584, 
+            "lon": -74.248753, 
+            "subjects": 2, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.742859
+        }, 
+        {
+            "name": "SUNY at Albany", 
+            "unitid": 196060, 
+            "lon": -73.825014, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.686917
+        }, 
+        {
+            "name": "Oakland University", 
+            "unitid": 171571, 
+            "lon": -83.218895, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.67255
+        }, 
+        {
+            "name": "University of Illinois at Urbana-Champaign", 
+            "unitid": 145637, 
+            "lon": -88.230309, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.108864
+        }, 
+        {
+            "name": "University of Notre Dame", 
+            "unitid": 152080, 
+            "lon": -86.289848, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.616717
+        }, 
+        {
+            "name": "California State University-Fullerton", 
+            "unitid": 110565, 
+            "lon": -117.885349, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 33.883627
+        }, 
+        {
+            "name": "Case Western Reserve University", 
+            "unitid": 201645, 
+            "lon": -81.605769, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.500812
+        }, 
+        {
+            "name": "Yale University", 
+            "unitid": 130794, 
+            "lon": -72.92886, 
+            "subjects": 4, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.310189
+        }, 
+        {
+            "name": "New York University", 
+            "unitid": 193900, 
+            "lon": -73.997264, 
+            "subjects": 3, 
+            "degrees": 43, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.729452
+        }, 
+        {
+            "name": "University of Massachusetts-Boston", 
+            "unitid": 166638, 
+            "lon": -71.038653, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.314541
+        }, 
+        {
+            "name": "Johns Hopkins University", 
+            "unitid": 162928, 
+            "lon": -76.620799, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 39.32838
+        }, 
+        {
+            "name": "University of California-Santa Barbara", 
+            "unitid": 110705, 
+            "lon": -119.848071, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 34.415462
+        }, 
+        {
+            "name": "University of Florida", 
+            "unitid": 134130, 
+            "lon": -82.361195, 
+            "subjects": 1, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 29.638248
+        }, 
+        {
+            "name": "University of Arizona", 
+            "unitid": 104179, 
+            "lon": -110.950769, 
+            "subjects": 3, 
+            "degrees": 16, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 32.232071
+        }, 
+        {
+            "name": "Spertus College", 
+            "unitid": 148982, 
+            "lon": -87.624634, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 41.872741
+        }, 
+        {
+            "name": "California State University-Long Beach", 
+            "unitid": 110583, 
+            "lon": -118.1123, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 33.782752
+        }, 
+        {
+            "name": "Princeton University", 
+            "unitid": 186131, 
+            "lon": -74.664364, 
+            "subjects": 2, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 40.348232
+        }, 
+        {
+            "name": "New Mexico Highlands University", 
+            "unitid": 187897, 
+            "lon": -105.222824, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 35.598982
+        }, 
+        {
+            "name": "Western Kentucky University", 
+            "unitid": 157951, 
+            "lon": -86.455898, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 36.985718
+        }, 
+        {
+            "name": "Boston University", 
+            "unitid": 164988, 
+            "lon": -71.09984, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 42.349581
+        }, 
+        {
+            "name": "Naval Postgraduate School", 
+            "unitid": 119678, 
+            "lon": -121.874248, 
+            "subjects": 4, 
+            "degrees": 63, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 36.597159
+        }, 
+        {
+            "name": "University of Delaware", 
+            "unitid": 130943, 
+            "lon": -75.753579, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:22 GMT-0400 (EDT)", 
+            "lat": 39.679783
+        }
+    ], 
+    "Thu May 14 2015 17:10:38 GMT-0400 (EDT)": [
+        {
+            "name": "Baylor University", 
+            "unitid": 223232, 
+            "lon": -97.119359, 
+            "subjects": 1, 
+            "degrees": 16, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 31.545956
+        }, 
+        {
+            "name": "Marquette University", 
+            "unitid": 239105, 
+            "lon": -87.928122, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 43.038765
+        }, 
+        {
+            "name": "Texas Christian University", 
+            "unitid": 228875, 
+            "lon": -97.361537, 
+            "subjects": 1, 
+            "degrees": 15, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 32.709568
+        }, 
+        {
+            "name": "Midwestern State University", 
+            "unitid": 226833, 
+            "lon": -98.51774, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 33.877143
+        }, 
+        {
+            "name": "Villanova University", 
+            "unitid": 216597, 
+            "lon": -75.345457, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.039388
+        }, 
+        {
+            "name": "University of Pennsylvania", 
+            "unitid": 215062, 
+            "lon": -75.193618, 
+            "subjects": 1, 
+            "degrees": 41, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 39.951002
+        }, 
+        {
+            "name": "Indiana University of Pennsylvania-Main Campus", 
+            "unitid": 213020, 
+            "lon": -79.159869, 
+            "subjects": 1, 
+            "degrees": 14, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.615589
+        }, 
+        {
+            "name": "Stanford University", 
+            "unitid": 243744, 
+            "lon": -122.182212, 
+            "subjects": 1, 
+            "degrees": 18, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 37.431746
+        }, 
+        {
+            "name": "University of South Carolina-Columbia", 
+            "unitid": 218663, 
+            "lon": -81.037739, 
+            "subjects": 1, 
+            "degrees": 40, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 34.006153
+        }, 
+        {
+            "name": "Sam Houston State University", 
+            "unitid": 227881, 
+            "lon": -95.5519, 
+            "subjects": 1, 
+            "degrees": 17, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 30.7247
+        }, 
+        {
+            "name": "The University of Tennessee at Chattanooga", 
+            "unitid": 221740, 
+            "lon": -85.299812, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 35.048247
+        }, 
+        {
+            "name": "Virginia Commonwealth University", 
+            "unitid": 234030, 
+            "lon": -77.453597, 
+            "subjects": 1, 
+            "degrees": 48, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 37.547631
+        }, 
+        {
+            "name": "University of Wisconsin-Whitewater", 
+            "unitid": 240189, 
+            "lon": -88.742368, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 42.835563
+        }, 
+        {
+            "name": "The University of Tennessee", 
+            "unitid": 221759, 
+            "lon": -83.929696, 
+            "subjects": 1, 
+            "degrees": 23, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 35.955093
+        }, 
+        {
+            "name": "The University of the Arts", 
+            "unitid": 215105, 
+            "lon": -75.165888, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 39.946017
+        }, 
+        {
+            "name": "Brown University", 
+            "unitid": 217156, 
+            "lon": -71.404467, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.827605
+        }, 
+        {
+            "name": "Shenandoah University", 
+            "unitid": 233541, 
+            "lon": -78.158376, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 39.166058
+        }, 
+        {
+            "name": "Stephen F Austin State University", 
+            "unitid": 228431, 
+            "lon": -94.58546, 
+            "subjects": 1, 
+            "degrees": 19, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 31.58562
+        }, 
+        {
+            "name": "Norwich University", 
+            "unitid": 230995, 
+            "lon": -72.660129, 
+            "subjects": 1, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 44.139402
+        }, 
+        {
+            "name": "University of Wyoming", 
+            "unitid": 240727, 
+            "lon": -105.57204, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.311943
+        }, 
+        {
+            "name": "Eastern Washington University", 
+            "unitid": 235097, 
+            "lon": -117.589371, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 47.491293
+        }, 
+        {
+            "name": "University of Virginia-Main Campus", 
+            "unitid": 234076, 
+            "lon": -78.502597, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 38.036545
+        }, 
+        {
+            "name": "Texas State University-San Marcos", 
+            "unitid": 228459, 
+            "lon": -97.936392, 
+            "subjects": 1, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 29.889202
+        }, 
+        {
+            "name": "Angelo State University", 
+            "unitid": 222831, 
+            "lon": -100.466495, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 31.44145
+        }, 
+        {
+            "name": "Tennessee State University", 
+            "unitid": 221838, 
+            "lon": -86.82937, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 36.16899
+        }, 
+        {
+            "name": "Sul Ross State University", 
+            "unitid": 228501, 
+            "lon": -103.653739, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 30.362843
+        }, 
+        {
+            "name": "Brigham Young University-Provo", 
+            "unitid": 230038, 
+            "lon": -111.649281, 
+            "subjects": 1, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.250851
+        }, 
+        {
+            "name": "The University of Texas at San Antonio", 
+            "unitid": 229027, 
+            "lon": -98.621386, 
+            "subjects": 1, 
+            "degrees": 16, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 29.582418
+        }, 
+        {
+            "name": "Pacific Lutheran University", 
+            "unitid": 236230, 
+            "lon": -122.445372, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 47.145494
+        }, 
+        {
+            "name": "Alabama State University", 
+            "unitid": 100724, 
+            "lon": -86.295677, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 32.364317
+        }, 
+        {
+            "name": "West Chester University of Pennsylvania", 
+            "unitid": 216764, 
+            "lon": -75.594631, 
+            "subjects": 1, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 39.949084
+        }, 
+        {
+            "name": "University of Memphis", 
+            "unitid": 220862, 
+            "lon": -89.993508, 
+            "subjects": 1, 
+            "degrees": 32, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 35.115864
+        }, 
+        {
+            "name": "Prairie View A & M University", 
+            "unitid": 227526, 
+            "lon": -95.992066, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 30.094591
+        }, 
+        {
+            "name": "University of Houston", 
+            "unitid": 225511, 
+            "lon": -95.344851, 
+            "subjects": 1, 
+            "degrees": 32, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 29.719988
+        }, 
+        {
+            "name": "Pennsylvania State University-Main Campus", 
+            "unitid": 214777, 
+            "lon": -77.861644, 
+            "subjects": 1, 
+            "degrees": 34, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.800732
+        }, 
+        {
+            "name": "George Mason University", 
+            "unitid": 232186, 
+            "lon": -77.30794, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 38.83088
+        }, 
+        {
+            "name": "Texas Tech University", 
+            "unitid": 229115, 
+            "lon": -101.876917, 
+            "subjects": 1, 
+            "degrees": 25, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 33.580309
+        }, 
+        {
+            "name": "Texas A & M University-Commerce", 
+            "unitid": 224554, 
+            "lon": -95.906913, 
+            "subjects": 1, 
+            "degrees": 14, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 33.243814
+        }, 
+        {
+            "name": "Temple University", 
+            "unitid": 216339, 
+            "lon": -75.158267, 
+            "subjects": 1, 
+            "degrees": 90, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 39.980943
+        }, 
+        {
+            "name": "Mansfield University of Pennsylvania", 
+            "unitid": 213783, 
+            "lon": -77.07526, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.807693
+        }, 
+        {
+            "name": "Clemson University", 
+            "unitid": 217882, 
+            "lon": -82.834463, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 34.677329
+        }, 
+        {
+            "name": "Gratz College", 
+            "unitid": 212771, 
+            "lon": -75.133025, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.065782
+        }, 
+        {
+            "name": "University of Wisconsin-Superior", 
+            "unitid": 240426, 
+            "lon": -92.089039, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 46.717548
+        }, 
+        {
+            "name": "Vanderbilt University", 
+            "unitid": 221999, 
+            "lon": -86.804875, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 36.14443
+        }, 
+        {
+            "name": "Middle Tennessee State University", 
+            "unitid": 220978, 
+            "lon": -86.362094, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 35.849139
+        }, 
+        {
+            "name": "Texas Woman's University", 
+            "unitid": 229179, 
+            "lon": -97.129088, 
+            "subjects": 1, 
+            "degrees": 16, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 33.227002
+        }, 
+        {
+            "name": "University of Wisconsin-Madison", 
+            "unitid": 240444, 
+            "lon": -89.405356, 
+            "subjects": 1, 
+            "degrees": 81, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 43.073858
+        }, 
+        {
+            "name": "Radford University", 
+            "unitid": 233277, 
+            "lon": -80.549731, 
+            "subjects": 1, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 37.136914
+        }, 
+        {
+            "name": "Marywood University", 
+            "unitid": 213826, 
+            "lon": -75.633996, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.434978
+        }, 
+        {
+            "name": "University of Wisconsin-Milwaukee", 
+            "unitid": 240453, 
+            "lon": -87.880488, 
+            "subjects": 1, 
+            "degrees": 45, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 43.076848
+        }, 
+        {
+            "name": "Utah State University", 
+            "unitid": 230728, 
+            "lon": -111.81391, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.740748
+        }, 
+        {
+            "name": "Central Washington University", 
+            "unitid": 234827, 
+            "lon": -120.537716, 
+            "subjects": 1, 
+            "degrees": 12, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 47.004957
+        }, 
+        {
+            "name": "Rhode Island College", 
+            "unitid": 217420, 
+            "lon": -71.466915, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.84266
+        }, 
+        {
+            "name": "Columbia College", 
+            "unitid": 217934, 
+            "lon": -81.001369, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 34.062923
+        }, 
+        {
+            "name": "University of South Dakota", 
+            "unitid": 219471, 
+            "lon": -96.924664, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 42.784558
+        }, 
+        {
+            "name": "Winthrop University", 
+            "unitid": 218964, 
+            "lon": -81.028663, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 34.93851
+        }, 
+        {
+            "name": "Texas A & M University-Kingsville", 
+            "unitid": 228705, 
+            "lon": -97.882342, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 27.524852
+        }, 
+        {
+            "name": "Converse College", 
+            "unitid": 217961, 
+            "lon": -81.918829, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 34.956232
+        }, 
+        {
+            "name": "University of Utah", 
+            "unitid": 230764, 
+            "lon": -111.846044, 
+            "subjects": 1, 
+            "degrees": 25, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.762484
+        }, 
+        {
+            "name": "Hollins University", 
+            "unitid": 232308, 
+            "lon": -79.942196, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 37.354629
+        }, 
+        {
+            "name": "Goddard College", 
+            "unitid": 230889, 
+            "lon": -72.437252, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 44.27912
+        }, 
+        {
+            "name": "Bob Jones University", 
+            "unitid": 217749, 
+            "lon": -82.36329, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 34.87402
+        }, 
+        {
+            "name": "Washington State University", 
+            "unitid": 236939, 
+            "lon": -117.158168, 
+            "subjects": 1, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 46.730448
+        }, 
+        {
+            "name": "University of Rhode Island", 
+            "unitid": 217484, 
+            "lon": -71.531052, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.481616
+        }, 
+        {
+            "name": "The University of Alabama", 
+            "unitid": 100751, 
+            "lon": -87.545766, 
+            "subjects": 1, 
+            "degrees": 22, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 33.2144
+        }, 
+        {
+            "name": "University of North Texas", 
+            "unitid": 227216, 
+            "lon": -97.151211, 
+            "subjects": 1, 
+            "degrees": 73, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 33.210958
+        }, 
+        {
+            "name": "University of Washington-Seattle Campus", 
+            "unitid": 236948, 
+            "lon": -122.313115, 
+            "subjects": 1, 
+            "degrees": 48, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 47.656213
+        }, 
+        {
+            "name": "Rhode Island School of Design", 
+            "unitid": 217493, 
+            "lon": -71.407692, 
+            "subjects": 1, 
+            "degrees": 25, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 41.825935
+        }, 
+        {
+            "name": "Southern Methodist University", 
+            "unitid": 228246, 
+            "lon": -96.784855, 
+            "subjects": 1, 
+            "degrees": 85, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 32.845254
+        }, 
+        {
+            "name": "Purdue University-Main Campus", 
+            "unitid": 243780, 
+            "lon": -86.914435, 
+            "subjects": 1, 
+            "degrees": 18, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.428206
+        }, 
+        {
+            "name": "Bennington College", 
+            "unitid": 230816, 
+            "lon": -73.237498, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 42.92004
+        }, 
+        {
+            "name": "The University of Texas at Austin", 
+            "unitid": 228778, 
+            "lon": -97.737277, 
+            "subjects": 1, 
+            "degrees": 48, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 30.28473
+        }, 
+        {
+            "name": "East Tennessee State University", 
+            "unitid": 220075, 
+            "lon": -82.366954, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 36.301643
+        }, 
+        {
+            "name": "Rice University", 
+            "unitid": 227757, 
+            "lon": -95.403625, 
+            "subjects": 1, 
+            "degrees": 29, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 29.716485
+        }, 
+        {
+            "name": "West Texas A & M University", 
+            "unitid": 229814, 
+            "lon": -101.9158, 
+            "subjects": 1, 
+            "degrees": 12, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 34.981996
+        }, 
+        {
+            "name": "The University of Texas at El Paso", 
+            "unitid": 228796, 
+            "lon": -106.50356, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 31.771697
+        }, 
+        {
+            "name": "Virginia Polytechnic Institute and State University", 
+            "unitid": 233921, 
+            "lon": -80.434849, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 37.237477
+        }, 
+        {
+            "name": "West Virginia University", 
+            "unitid": 238032, 
+            "lon": -79.953926, 
+            "subjects": 1, 
+            "degrees": 27, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 39.63468
+        }, 
+        {
+            "name": "Austin Peay State University", 
+            "unitid": 219602, 
+            "lon": -87.354081, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 36.533319
+        }, 
+        {
+            "name": "Western Washington University", 
+            "unitid": 237011, 
+            "lon": -122.484873, 
+            "subjects": 1, 
+            "degrees": 21, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 48.737236
+        }, 
+        {
+            "name": "Marshall University", 
+            "unitid": 237525, 
+            "lon": -82.43065, 
+            "subjects": 1, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 38.42261
+        }, 
+        {
+            "name": "Hardin-Simmons University", 
+            "unitid": 225247, 
+            "lon": -99.733815, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 32.476786
+        }, 
+        {
+            "name": "Abilene Christian University", 
+            "unitid": 222178, 
+            "lon": -99.70954, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 32.46915
+        }, 
+        {
+            "name": "James Madison University", 
+            "unitid": 232423, 
+            "lon": -78.871663, 
+            "subjects": 1, 
+            "degrees": 11, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 38.435332
+        }, 
+        {
+            "name": "Norfolk State University", 
+            "unitid": 232937, 
+            "lon": -76.26393, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 36.848262
+        }, 
+        {
+            "name": "University of Pittsburgh-Pittsburgh Campus", 
+            "unitid": 215293, 
+            "lon": -79.954692, 
+            "subjects": 1, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.444502
+        }, 
+        {
+            "name": "Carnegie Mellon University", 
+            "unitid": 211440, 
+            "lon": -79.942914, 
+            "subjects": 1, 
+            "degrees": 21, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 40.444616
+        }, 
+        {
+            "name": "Auburn University", 
+            "unitid": 100858, 
+            "lon": -85.492409, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 32.600201
+        }
+    ], 
+    "Thu May 14 2015 17:09:23 GMT-0400 (EDT)": [
+        {
+            "name": "California State University-Los Angeles", 
+            "unitid": 110592, 
+            "lon": -118.168965, 
+            "subjects": 3, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 34.066927
+        }, 
+        {
+            "name": "Northeastern Illinois University", 
+            "unitid": 147776, 
+            "lon": -87.72013, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.980567
+        }, 
+        {
+            "name": "CUNY Hunter College", 
+            "unitid": 190594, 
+            "lon": -73.964795, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.768669
+        }, 
+        {
+            "name": "San Jose State University", 
+            "unitid": 122755, 
+            "lon": -121.881214, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 37.335201
+        }, 
+        {
+            "name": "University of Hawaii at Manoa", 
+            "unitid": 141574, 
+            "lon": -157.816607, 
+            "subjects": 3, 
+            "degrees": 25, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 21.292648
+        }, 
+        {
+            "name": "Harvard University", 
+            "unitid": 166027, 
+            "lon": -71.118177, 
+            "subjects": 4, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.374429
+        }, 
+        {
+            "name": "George Washington University", 
+            "unitid": 131469, 
+            "lon": -77.047871, 
+            "subjects": 5, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 38.89865
+        }, 
+        {
+            "name": "The University of Alabama", 
+            "unitid": 100751, 
+            "lon": -87.545766, 
+            "subjects": 2, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 33.2144
+        }, 
+        {
+            "name": "Holy Names University", 
+            "unitid": 115728, 
+            "lon": -122.187169, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 37.802654
+        }, 
+        {
+            "name": "Princeton University", 
+            "unitid": 186131, 
+            "lon": -74.664364, 
+            "subjects": 2, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.348232
+        }, 
+        {
+            "name": "American Jewish University", 
+            "unitid": 116846, 
+            "lon": -118.471764, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 34.128099
+        }, 
+        {
+            "name": "Brandeis University", 
+            "unitid": 165015, 
+            "lon": -71.254716, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.364947
+        }, 
+        {
+            "name": "Washington University in St Louis", 
+            "unitid": 179867, 
+            "lon": -90.311639, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 38.648125
+        }, 
+        {
+            "name": "Trinity College", 
+            "unitid": 130590, 
+            "lon": -72.688684, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.746746
+        }, 
+        {
+            "name": "Louisiana State University and Agricultural & Mechanical College", 
+            "unitid": 159391, 
+            "lon": -91.196656, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 30.552111
+        }, 
+        {
+            "name": "Stanford University", 
+            "unitid": 243744, 
+            "lon": -122.182212, 
+            "subjects": 2, 
+            "degrees": 19, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 37.431746
+        }, 
+        {
+            "name": "Georgetown University", 
+            "unitid": 131496, 
+            "lon": -77.073463, 
+            "subjects": 3, 
+            "degrees": 66, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 38.908809
+        }, 
+        {
+            "name": "San Diego State University", 
+            "unitid": 122409, 
+            "lon": -117.071228, 
+            "subjects": 2, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 32.77525
+        }, 
+        {
+            "name": "University of California-Berkeley", 
+            "unitid": 110635, 
+            "lon": -122.260401, 
+            "subjects": 4, 
+            "degrees": 27, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 37.871519
+        }, 
+        {
+            "name": "Case Western Reserve University", 
+            "unitid": 201645, 
+            "lon": -81.605769, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.500812
+        }, 
+        {
+            "name": "University of Chicago", 
+            "unitid": 144050, 
+            "lon": -87.601196, 
+            "subjects": 4, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.78917
+        }, 
+        {
+            "name": "Tulane University of Louisiana", 
+            "unitid": 160755, 
+            "lon": -90.120409, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 29.939696
+        }, 
+        {
+            "name": "Rockford University", 
+            "unitid": 148405, 
+            "lon": -89.019536, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.270639
+        }, 
+        {
+            "name": "Indiana University-Bloomington", 
+            "unitid": 151351, 
+            "lon": -86.526904, 
+            "subjects": 4, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 39.166383
+        }, 
+        {
+            "name": "University of Iowa", 
+            "unitid": 153658, 
+            "lon": -91.535698, 
+            "subjects": 3, 
+            "degrees": 14, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.660695
+        }, 
+        {
+            "name": "Boston College", 
+            "unitid": 164924, 
+            "lon": -71.171488, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.337688
+        }, 
+        {
+            "name": "University of California-Irvine", 
+            "unitid": 110653, 
+            "lon": -117.768639, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 33.667002
+        }, 
+        {
+            "name": "Pepperdine University", 
+            "unitid": 121150, 
+            "lon": -118.707677, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 34.041912
+        }, 
+        {
+            "name": "University of Kansas", 
+            "unitid": 155317, 
+            "lon": -95.24587, 
+            "subjects": 3, 
+            "degrees": 14, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 38.957351
+        }, 
+        {
+            "name": "Howard University", 
+            "unitid": 131520, 
+            "lon": -77.019478, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 38.920739
+        }, 
+        {
+            "name": "Clark Atlanta University", 
+            "unitid": 138947, 
+            "lon": -84.412818, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 33.748772
+        }, 
+        {
+            "name": "University of California-Los Angeles", 
+            "unitid": 110662, 
+            "lon": -118.443901, 
+            "subjects": 3, 
+            "degrees": 27, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 34.068892
+        }, 
+        {
+            "name": "Bowling Green State University-Main Campus", 
+            "unitid": 201441, 
+            "lon": -83.637531, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.377036
+        }, 
+        {
+            "name": "CUNY Queens College", 
+            "unitid": 190664, 
+            "lon": -73.815387, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.737771
+        }, 
+        {
+            "name": "University of Illinois at Chicago", 
+            "unitid": 145600, 
+            "lon": -87.651145, 
+            "subjects": 2, 
+            "degrees": 12, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.872651
+        }, 
+        {
+            "name": "Cornell University", 
+            "unitid": 190415, 
+            "lon": -76.48269, 
+            "subjects": 3, 
+            "degrees": 11, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.445291
+        }, 
+        {
+            "name": "Florida State University", 
+            "unitid": 134097, 
+            "lon": -84.290883, 
+            "subjects": 2, 
+            "degrees": 11, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 30.439741
+        }, 
+        {
+            "name": "CUNY Brooklyn College", 
+            "unitid": 190549, 
+            "lon": -73.95312, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.631912
+        }, 
+        {
+            "name": "University of Maryland-College Park", 
+            "unitid": 163286, 
+            "lon": -76.939704, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 38.988607
+        }, 
+        {
+            "name": "Saint Louis University-Main Campus", 
+            "unitid": 179159, 
+            "lon": -90.23343, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 38.636516
+        }, 
+        {
+            "name": "Seton Hall University", 
+            "unitid": 186584, 
+            "lon": -74.248753, 
+            "subjects": 2, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.742859
+        }, 
+        {
+            "name": "SUNY College at Oneonta", 
+            "unitid": 196185, 
+            "lon": -75.064186, 
+            "subjects": 1, 
+            "degrees": 12, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.466555
+        }, 
+        {
+            "name": "SUNY at Albany", 
+            "unitid": 196060, 
+            "lon": -73.825014, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.686917
+        }, 
+        {
+            "name": "University of Illinois at Urbana-Champaign", 
+            "unitid": 145637, 
+            "lon": -88.230309, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.108864
+        }, 
+        {
+            "name": "St. John's University-New York", 
+            "unitid": 195809, 
+            "lon": -73.795301, 
+            "subjects": 2, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.721979
+        }, 
+        {
+            "name": "California State University-Fullerton", 
+            "unitid": 110565, 
+            "lon": -117.885349, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 33.883627
+        }, 
+        {
+            "name": "Yale University", 
+            "unitid": 130794, 
+            "lon": -72.92886, 
+            "subjects": 4, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.310189
+        }, 
+        {
+            "name": "New York University", 
+            "unitid": 193900, 
+            "lon": -73.997264, 
+            "subjects": 4, 
+            "degrees": 22, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 40.729452
+        }, 
+        {
+            "name": "Appalachian State University", 
+            "unitid": 197869, 
+            "lon": -81.662569, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 36.201658
+        }, 
+        {
+            "name": "University of Massachusetts-Boston", 
+            "unitid": 166638, 
+            "lon": -71.038653, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.314541
+        }, 
+        {
+            "name": "Johns Hopkins University", 
+            "unitid": 162928, 
+            "lon": -76.620799, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 39.32838
+        }, 
+        {
+            "name": "Oakland University", 
+            "unitid": 171571, 
+            "lon": -83.218895, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.67255
+        }, 
+        {
+            "name": "University of Florida", 
+            "unitid": 134130, 
+            "lon": -82.361195, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 29.638248
+        }, 
+        {
+            "name": "University of Arizona", 
+            "unitid": 104179, 
+            "lon": -110.950769, 
+            "subjects": 2, 
+            "degrees": 19, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 32.232071
+        }, 
+        {
+            "name": "Spertus College", 
+            "unitid": 148982, 
+            "lon": -87.624634, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 41.872741
+        }, 
+        {
+            "name": "University at Buffalo", 
+            "unitid": 196088, 
+            "lon": -78.78919, 
+            "subjects": 1, 
+            "degrees": 17, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 43.000416
+        }, 
+        {
+            "name": "New Mexico Highlands University", 
+            "unitid": 187897, 
+            "lon": -105.222824, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 35.598982
+        }, 
+        {
+            "name": "Western Kentucky University", 
+            "unitid": 157951, 
+            "lon": -86.455898, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 36.985718
+        }, 
+        {
+            "name": "Boston University", 
+            "unitid": 164988, 
+            "lon": -71.09984, 
+            "subjects": 2, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 42.349581
+        }, 
+        {
+            "name": "Naval Postgraduate School", 
+            "unitid": 119678, 
+            "lon": -121.874248, 
+            "subjects": 3, 
+            "degrees": 85, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 36.597159
+        }, 
+        {
+            "name": "University of Delaware", 
+            "unitid": 130943, 
+            "lon": -75.753579, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:23 GMT-0400 (EDT)", 
+            "lat": 39.679783
+        }
+    ], 
+    "Thu May 14 2015 17:09:56 GMT-0400 (EDT)": [
+        {
+            "name": "California State University-Los Angeles", 
+            "unitid": 110592, 
+            "lon": -118.168965, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 34.066927
+        }, 
+        {
+            "name": "University of Illinois at Chicago", 
+            "unitid": 145600, 
+            "lon": -87.651145, 
+            "subjects": 1, 
+            "degrees": 12, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.872651
+        }, 
+        {
+            "name": "San Jose State University", 
+            "unitid": 122755, 
+            "lon": -121.881214, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 37.335201
+        }, 
+        {
+            "name": "University at Buffalo", 
+            "unitid": 196088, 
+            "lon": -78.78919, 
+            "subjects": 1, 
+            "degrees": 22, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 43.000416
+        }, 
+        {
+            "name": "University of Hawaii at Manoa", 
+            "unitid": 141574, 
+            "lon": -157.816607, 
+            "subjects": 1, 
+            "degrees": 20, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 21.292648
+        }, 
+        {
+            "name": "University of South Florida-Main Campus", 
+            "unitid": 137351, 
+            "lon": -82.415876, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 28.056647
+        }, 
+        {
+            "name": "Wesleyan University", 
+            "unitid": 130697, 
+            "lon": -72.656755, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.55678
+        }, 
+        {
+            "name": "Emory University", 
+            "unitid": 139658, 
+            "lon": -84.325782, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 33.798836
+        }, 
+        {
+            "name": "Harvard University", 
+            "unitid": 166027, 
+            "lon": -71.118177, 
+            "subjects": 1, 
+            "degrees": 19, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.374429
+        }, 
+        {
+            "name": "George Washington University", 
+            "unitid": 131469, 
+            "lon": -77.047871, 
+            "subjects": 1, 
+            "degrees": 29, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 38.89865
+        }, 
+        {
+            "name": "The University of Alabama", 
+            "unitid": 100751, 
+            "lon": -87.545766, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 33.2144
+        }, 
+        {
+            "name": "Holy Names University", 
+            "unitid": 115728, 
+            "lon": -122.187169, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 37.802654
+        }, 
+        {
+            "name": "Central Connecticut State University", 
+            "unitid": 128771, 
+            "lon": -72.770094, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.690258
+        }, 
+        {
+            "name": "Brandeis University", 
+            "unitid": 165015, 
+            "lon": -71.254716, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.364947
+        }, 
+        {
+            "name": "Washington University in St Louis", 
+            "unitid": 179867, 
+            "lon": -90.311639, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 38.648125
+        }, 
+        {
+            "name": "Hebrew College", 
+            "unitid": 166045, 
+            "lon": -71.190525, 
+            "subjects": 1, 
+            "degrees": 13, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.3264
+        }, 
+        {
+            "name": "Trinity College", 
+            "unitid": 130590, 
+            "lon": -72.688684, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.746746
+        }, 
+        {
+            "name": "Louisiana State University and Agricultural & Mechanical College", 
+            "unitid": 159391, 
+            "lon": -91.196656, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 30.552111
+        }, 
+        {
+            "name": "University of Dayton", 
+            "unitid": 202480, 
+            "lon": -84.173662, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 39.73686
+        }, 
+        {
+            "name": "Georgetown University", 
+            "unitid": 131496, 
+            "lon": -77.073463, 
+            "subjects": 1, 
+            "degrees": 92, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 38.908809
+        }, 
+        {
+            "name": "San Diego State University", 
+            "unitid": 122409, 
+            "lon": -117.071228, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 32.77525
+        }, 
+        {
+            "name": "University of California-Berkeley", 
+            "unitid": 110635, 
+            "lon": -122.260401, 
+            "subjects": 1, 
+            "degrees": 21, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 37.871519
+        }, 
+        {
+            "name": "University of Minnesota-Twin Cities", 
+            "unitid": 174066, 
+            "lon": -93.235352, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 44.977886
+        }, 
+        {
+            "name": "University of Chicago", 
+            "unitid": 144050, 
+            "lon": -87.601196, 
+            "subjects": 1, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.78917
+        }, 
+        {
+            "name": "Tulane University of Louisiana", 
+            "unitid": 160755, 
+            "lon": -90.120409, 
+            "subjects": 1, 
+            "degrees": 14, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 29.939696
+        }, 
+        {
+            "name": "University of Kansas", 
+            "unitid": 155317, 
+            "lon": -95.24587, 
+            "subjects": 1, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 38.957351
+        }, 
+        {
+            "name": "Indiana University-Bloomington", 
+            "unitid": 151351, 
+            "lon": -86.526904, 
+            "subjects": 1, 
+            "degrees": 14, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 39.166383
+        }, 
+        {
+            "name": "Governors State University", 
+            "unitid": 145336, 
+            "lon": -87.717012, 
+            "subjects": 1, 
+            "degrees": 16, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.448603
+        }, 
+        {
+            "name": "University of Iowa", 
+            "unitid": 153658, 
+            "lon": -91.535698, 
+            "subjects": 1, 
+            "degrees": 11, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.660695
+        }, 
+        {
+            "name": "Boston College", 
+            "unitid": 164924, 
+            "lon": -71.171488, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.337688
+        }, 
+        {
+            "name": "University of California-Irvine", 
+            "unitid": 110653, 
+            "lon": -117.768639, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 33.667002
+        }, 
+        {
+            "name": "Pepperdine University", 
+            "unitid": 121150, 
+            "lon": -118.707677, 
+            "subjects": 1, 
+            "degrees": 4, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 34.041912
+        }, 
+        {
+            "name": "Howard University", 
+            "unitid": 131520, 
+            "lon": -77.019478, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 38.920739
+        }, 
+        {
+            "name": "Clark Atlanta University", 
+            "unitid": 138947, 
+            "lon": -84.412818, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 33.748772
+        }, 
+        {
+            "name": "University of California-Los Angeles", 
+            "unitid": 110662, 
+            "lon": -118.443901, 
+            "subjects": 1, 
+            "degrees": 28, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 34.068892
+        }, 
+        {
+            "name": "Bowling Green State University-Main Campus", 
+            "unitid": 201441, 
+            "lon": -83.637531, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.377036
+        }, 
+        {
+            "name": "Stetson University", 
+            "unitid": 137546, 
+            "lon": -81.301604, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 29.036295
+        }, 
+        {
+            "name": "Barry University", 
+            "unitid": 132471, 
+            "lon": -80.196136, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 25.878865
+        }, 
+        {
+            "name": "Cornell University", 
+            "unitid": 190415, 
+            "lon": -76.48269, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.445291
+        }, 
+        {
+            "name": "Florida State University", 
+            "unitid": 134097, 
+            "lon": -84.290883, 
+            "subjects": 1, 
+            "degrees": 5, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 30.439741
+        }, 
+        {
+            "name": "Case Western Reserve University", 
+            "unitid": 201645, 
+            "lon": -81.605769, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.500812
+        }, 
+        {
+            "name": "CUNY Brooklyn College", 
+            "unitid": 190549, 
+            "lon": -73.95312, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 40.631912
+        }, 
+        {
+            "name": "University of Maryland-College Park", 
+            "unitid": 163286, 
+            "lon": -76.939704, 
+            "subjects": 1, 
+            "degrees": 11, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 38.988607
+        }, 
+        {
+            "name": "Saint Louis University-Main Campus", 
+            "unitid": 179159, 
+            "lon": -90.23343, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 38.636516
+        }, 
+        {
+            "name": "Seton Hall University", 
+            "unitid": 186584, 
+            "lon": -74.248753, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 40.742859
+        }, 
+        {
+            "name": "SUNY College at Oneonta", 
+            "unitid": 196185, 
+            "lon": -75.064186, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.466555
+        }, 
+        {
+            "name": "SUNY at Albany", 
+            "unitid": 196060, 
+            "lon": -73.825014, 
+            "subjects": 1, 
+            "degrees": 6, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.686917
+        }, 
+        {
+            "name": "University of Illinois at Urbana-Champaign", 
+            "unitid": 145637, 
+            "lon": -88.230309, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 40.108864
+        }, 
+        {
+            "name": "University of Michigan-Ann Arbor", 
+            "unitid": 170976, 
+            "lon": -83.743132, 
+            "subjects": 1, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.276138
+        }, 
+        {
+            "name": "St. John's University-New York", 
+            "unitid": 195809, 
+            "lon": -73.795301, 
+            "subjects": 1, 
+            "degrees": 21, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 40.721979
+        }, 
+        {
+            "name": "California State University-Fullerton", 
+            "unitid": 110565, 
+            "lon": -117.885349, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 33.883627
+        }, 
+        {
+            "name": "University of New Mexico-Main Campus", 
+            "unitid": 187985, 
+            "lon": -106.620155, 
+            "subjects": 1, 
+            "degrees": 10, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 35.083868
+        }, 
+        {
+            "name": "Boston University", 
+            "unitid": 164988, 
+            "lon": -71.09984, 
+            "subjects": 1, 
+            "degrees": 12, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 42.349581
+        }, 
+        {
+            "name": "Yale University", 
+            "unitid": 130794, 
+            "lon": -72.92886, 
+            "subjects": 1, 
+            "degrees": 23, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.310189
+        }, 
+        {
+            "name": "New York University", 
+            "unitid": 193900, 
+            "lon": -73.997264, 
+            "subjects": 1, 
+            "degrees": 27, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 40.729452
+        }, 
+        {
+            "name": "Appalachian State University", 
+            "unitid": 197869, 
+            "lon": -81.662569, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 36.201658
+        }, 
+        {
+            "name": "American Jewish University", 
+            "unitid": 116846, 
+            "lon": -118.471764, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 34.128099
+        }, 
+        {
+            "name": "Johns Hopkins University", 
+            "unitid": 162928, 
+            "lon": -76.620799, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 39.32838
+        }, 
+        {
+            "name": "University of California-Santa Barbara", 
+            "unitid": 110705, 
+            "lon": -119.848071, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 34.415462
+        }, 
+        {
+            "name": "University of Florida", 
+            "unitid": 134130, 
+            "lon": -82.361195, 
+            "subjects": 1, 
+            "degrees": 7, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 29.638248
+        }, 
+        {
+            "name": "University of Arizona", 
+            "unitid": 104179, 
+            "lon": -110.950769, 
+            "subjects": 1, 
+            "degrees": 22, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 32.232071
+        }, 
+        {
+            "name": "Spertus College", 
+            "unitid": 148982, 
+            "lon": -87.624634, 
+            "subjects": 1, 
+            "degrees": 2, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.872741
+        }, 
+        {
+            "name": "California State University-Long Beach", 
+            "unitid": 110583, 
+            "lon": -118.1123, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 33.782752
+        }, 
+        {
+            "name": "Princeton University", 
+            "unitid": 186131, 
+            "lon": -74.664364, 
+            "subjects": 1, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 40.348232
+        }, 
+        {
+            "name": "New Mexico Highlands University", 
+            "unitid": 187897, 
+            "lon": -105.222824, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 35.598982
+        }, 
+        {
+            "name": "Western Kentucky University", 
+            "unitid": 157951, 
+            "lon": -86.455898, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 36.985718
+        }, 
+        {
+            "name": "University of Connecticut", 
+            "unitid": 129020, 
+            "lon": -72.249537, 
+            "subjects": 1, 
+            "degrees": 3, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 41.808215
+        }, 
+        {
+            "name": "Naval Postgraduate School", 
+            "unitid": 119678, 
+            "lon": -121.874248, 
+            "subjects": 1, 
+            "degrees": 69, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 36.597159
+        }, 
+        {
+            "name": "University of Delaware", 
+            "unitid": 130943, 
+            "lon": -75.753579, 
+            "subjects": 1, 
+            "degrees": 9, 
+            "year": "Thu May 14 2015 17:09:56 GMT-0400 (EDT)", 
+            "lat": 39.679783
+        }
+    ]
+}

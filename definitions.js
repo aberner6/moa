@@ -70,13 +70,13 @@ function renderData()
 
 	outerCircs.enter().append("circle")
         .attr("stroke", function(d){
-        	console.log(d.type);
-        	console.log(d.color);
+        	// console.log(d.type);
+        	// console.log(d.color);
 			return d.color;
 		})
         .attr("fill","none")
 		.attr("r",0)
-		.attr("opacity",0)
+		.attr("stroke-opacity",0)
 		.attr("stroke-width",3)
 
 	innerCircs.enter().append("circle")
@@ -86,6 +86,7 @@ function renderData()
         .attr("stroke", function(d){
 			return d.color;
 		})
+		.attr("stroke-width",1)
 		.attr("r",2)
 		.attr("opacity",0)
         .attr("cx", function(d) { return d.projection[0]; })
@@ -99,23 +100,28 @@ function renderData()
     outerCircs
         .attr("cx", function(d) { return d.projection[0]; })
         .attr("cy", function(d) { return d.projection[1]; })
-		.transition()
-		.duration(2000)
-		.attr("r",20)
-		.attr("opacity",1)
+        .transition()
+        // .dur
+		.attr("stroke-opacity",1)
+  .transition()
+      .ease("linear")
+      .duration(3000)
+      .style("stroke-opacity", 1e-6)
 		.attr("stroke-width",.1)
-		.transition()
-		.duration(2100)
-		.each("end", function(d,i){
-			// d3.select(this)
-			// .transition()
-			// .duration(2000)
-			// .attr("stroke","black")
-			// .each("end", function(d,i){
-				d3.select(this)	
-				.remove();			
-			// })
-		})
+      .attr("r", 20)
+      .remove();
+		// .transition()
+		// .duration(2100)
+		// .each("end", function(d,i){
+		// 	// d3.select(this)
+		// 	// .transition()
+		// 	// .duration(2000)
+		// 	// .attr("stroke","black")
+		// 	// .each("end", function(d,i){
+		// 		d3.select(this)	
+		// 		.remove();			
+		// 	// })
+		// })
 }
 
 function setTimeZone()
@@ -281,16 +287,40 @@ function setTimeZone()
 
 }
 
-var names = [];
-var uniqueNames = [];
+// var names = [];
+// var uniqueNames = [];
+// function loadPoint(point)
+// {
+// // 	names.push(point.strategy);
+
+// // $.each(names, function(i, el){
+// //     if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
+// // });
+
+// 	if (!strategies[point.strategy]) {
+// 		strategies[point.strategy] = {
+// 			color:colors(lastColorIndex),
+// 			count:0,
+// 			name:point.strategy
+// 		};
+// 		lastColorIndex++;
+// 	}
+
+// 	strategies[point.strategy].count++;
+
+// 	point.color = strategies[point.strategy].color
+// 	point.color = strategies[point.strategy].color
+// 	point.type = point.strategy;
+// 	point.created_at = Date.now();
+
+// 	point.projection = projection([point.geo.lng, point.geo.lat]);
+// 	data.push(point);
+// 	// console.log(data);
+// 	renderData();
+// 	//renderStrategies();
+// }
 function loadPoint(point)
 {
-	names.push(point.strategy);
-
-$.each(names, function(i, el){
-    if($.inArray(el, uniqueNames) === -1) uniqueNames.push(el);
-});
-
 	if (!strategies[point.strategy]) {
 		strategies[point.strategy] = {
 			color:colors(lastColorIndex),
@@ -303,17 +333,13 @@ $.each(names, function(i, el){
 	strategies[point.strategy].count++;
 
 	point.color = strategies[point.strategy].color
-	point.color = strategies[point.strategy].color
-	point.type = point.strategy;
 	point.created_at = Date.now();
 
 	point.projection = projection([point.geo.lng, point.geo.lat]);
 	data.push(point);
-	// console.log(data);
 	renderData();
 	//renderStrategies();
 }
-
 
 function antipode(position) {
   return [position[0] + 180, -position[1]];
