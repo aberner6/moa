@@ -129,33 +129,41 @@ function setTimeZone()
 		.domain([12,24])
 		.range([4,20])
 
-	var lineAcross = svg.selectAll("lineAcross")
-	lineAcross.append("line")
-		.attr('class','lineAcross')
-		.attr('stroke', 'white')
-		.attr('fill', 'white')	
-		.attr("stroke-width",1)	
-		.attr("x1",0)
-		.attr("y1",20)
-		.attr("x2",width)
-		.attr("y2",20)
+	// var lineAcross = svg.selectAll("lineAcross")
+	// lineAcross.append("line")
+	// 	.attr('class','lineAcross')
+	// 	.attr('stroke', 'white')
+	// 	.attr('fill', 'white')	
+	// 	.attr("stroke-width",1)	
+	// 	.attr("x1",0)
+	// 	.attr("y1",20)
+	// 	.attr("x2",width)
+	// 	.attr("y2",20)
 
 	var tz_hours = svg.selectAll("text.tzh").data(lat_tz);
 	tz_hours.enter().append("text")
 		.attr('class','tzh')
 		.style("text-anchor", "middle")
-		.style("font-size", "10px")
-		.attr('fill', 'gray')
+		.style("font-size", "12px")
+		.attr('fill', function(e){
+                	if(e.hour==now.getHours()&&(e.day)){
+                		return "white";
+                	}
+                	else{
+                		return "gray";
+                	}
+        })
+			// 'gray')
 		.attr("x", function(e){
 			return e.x + e.width / 2;
 		})
 		.attr("y", function(e){
 		  //20
 		        	if(e.hour<=12){
-		        		return yArc1Scale(e.hour)+15;
+		        		return yArc1Scale(e.hour)+18;
 		    		}
 		        	if(e.hour>12){
-		        		return yArc2Scale(e.hour)+15;
+		        		return yArc2Scale(e.hour)+18;
 		    		}			
 		});
 
@@ -169,7 +177,7 @@ var lineData = [];
             	.append("svg:image")
                 .attr("xlink:href", "/sun_white2-01.png")
 				.attr("x", function(e){
-					return e.x + (e.width / 2)-12;
+					return e.x + (e.width / 2)-13;
 				})
 		        .attr("y", function(e){
 		        	// "4"
@@ -182,12 +190,15 @@ var lineData = [];
 		        		return yArc2Scale(e.hour)
 		    		}
 		        })
-                .attr("width", "25")
-                .attr("height", "25")
+                .attr("width", "28")
+                .attr("height", "28")
                 .attr("opacity",function(e){
-                	if(e.day){
-                		return .9;
-                	}else{
+                	if(e.hour==now.getHours()&&(e.day)){
+                		return 1;
+                	}
+                	else if(e.day){
+                		return .4;
+                	}else if(!e.day){
                 		return 0;
                 	}
                 })
@@ -202,20 +213,23 @@ var lineData = [];
 		        .attr("y", function(e){
 		        	// "15"
 		        	if(e.hour<=12){
-		        		return yArc1Scale(e.hour)+11
+		        		return yArc1Scale(e.hour)+10;
 		    		}
 		        	if(e.hour>12){
-		        		return yArc2Scale(e.hour)+11
+		        		return yArc2Scale(e.hour)+10;
 		    		}
 		        })
-                .attr("width", "14")
-                .attr("height", "14")
+                .attr("width", "17")
+                .attr("height", "17")
                 .attr("opacity",function(e){
                 	// console.log(e);
-                	if(e.day){
+                	if(e.hour==now.getHours()&&(!e.day)){
+                		return 1;
+                	}
+                	else if(e.day){
                 		return 0;
-                	}else{
-                		return .7;
+                	}else if(!e.day){
+                		return .4;
                 	}
                 })
 
