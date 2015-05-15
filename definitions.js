@@ -144,7 +144,7 @@ function setTimeZone()
 	tz_hours.enter().append("text")
 		.attr('class','tzh')
 		.style("text-anchor", "middle")
-		.style("font-size", "12px")
+		.style("font-size", "10px")
 		.attr('fill', function(e){
                 	if(e.hour==now.getHours()&&(e.day)){
                 		return "white";
@@ -153,7 +153,6 @@ function setTimeZone()
                 		return "gray";
                 	}
         })
-			// 'gray')
 		.attr("x", function(e){
 			return e.x + e.width / 2;
 		})
@@ -165,7 +164,20 @@ function setTimeZone()
 		        	if(e.hour>12){
 		        		return yArc2Scale(e.hour)+18;
 		    		}			
-		});
+		})
+		.attr('opacity', function(e){
+                	if(e.hour==now.getHours()&&(e.day)){
+                		return 1;
+                	}
+                	else{
+                		return 0;
+                	}
+        })
+        .transition()
+        .ease("linear")
+        .duration(3000)
+        .attr("opacity",1)
+
 
 	tz_hours.text(function(e){return e.hour;});
 var lineData = [];
@@ -177,21 +189,32 @@ var lineData = [];
             	.append("svg:image")
                 .attr("xlink:href", "/sun_white2-01.png")
 				.attr("x", function(e){
-					return e.x + (e.width / 2)-13;
+					return e.x + (e.width / 2)-14;
 				})
 		        .attr("y", function(e){
 		        	// "4"
 		        	if(e.hour<=12){
-					lineData.push({x:(e.x + (e.width / 2)-12),y:yArc1Scale(e.hour)});
+					// lineData.push({x:(e.x + (e.width / 2)-12),y:yArc1Scale(e.hour)});
 		        		return yArc1Scale(e.hour)
 		    		}
 		        	if(e.hour>12){
-					lineData.push({x:(e.x + (e.width / 2)-12),y:yArc2Scale(e.hour)});
+					// lineData.push({x:(e.x + (e.width / 2)-12),y:yArc2Scale(e.hour)});
 		        		return yArc2Scale(e.hour)
 		    		}
 		        })
                 .attr("width", "28")
                 .attr("height", "28")
+                .attr("opacity",function(e){
+                	if(e.hour==now.getHours()&&(e.day)){
+                		return 1;
+                	}
+                	else {
+                		return 0;
+                	}
+                })
+                .transition()
+                .ease("linear")
+                .duration(3000)
                 .attr("opacity",function(e){
                 	if(e.hour==now.getHours()&&(e.day)){
                 		return 1;
@@ -207,6 +230,17 @@ var lineData = [];
                 moons.enter()
             	.append("svg:image")
                 .attr("xlink:href", "/moon_white2-01.png")
+                .attr("width", "17")
+                .attr("height", "17")
+                .attr("opacity",function(e){
+                	// console.log(e);
+                	if(e.hour==now.getHours()&&(!e.day)){
+                		return 1;
+                	}
+                	else{
+                		return 0;
+                	}
+                })
 				.attr("x", function(e){
 					return e.x + (e.width / 2)-5;
 				})
@@ -219,32 +253,32 @@ var lineData = [];
 		        		return yArc2Scale(e.hour)+10;
 		    		}
 		        })
-                .attr("width", "17")
-                .attr("height", "17")
-                .attr("opacity",function(e){
-                	// console.log(e);
-                	if(e.hour==now.getHours()&&(!e.day)){
+                .transition()
+                .ease("linear")
+                .duration(3000)
+                .attr("opacity",function(e){		        
+					if(e.hour==now.getHours()&&(!e.day)){
                 		return 1;
                 	}
                 	else if(e.day){
                 		return 0;
                 	}else if(!e.day){
-                		return .4;
+                		return .3;
                 	}
                 })
 
 //This is the accessor function we talked about above
-var lineFunction = d3.svg.line()
-	.x(function(d) { return d.x; })
-	.y(function(d) { return d.y; })
-	.interpolate("cardinal");
+// var lineFunction = d3.svg.line()
+// 	.x(function(d) { return d.x; })
+// 	.y(function(d) { return d.y; })
+// 	.interpolate("cardinal");
 
-var lineGraph = svg.append("path")
-                .attr("d", lineFunction(lineData))
-			    .style("stroke-dasharray", "1,4")
-				.attr('stroke','lightgray')
-		        .attr("stroke-width", 2)
-                .attr("fill", "none");
+// var lineGraph = svg.append("path")
+//                 .attr("d", lineFunction(lineData))
+// 			    .style("stroke-dasharray", "1,4")
+// 				.attr('stroke','lightgray')
+// 		        .attr("stroke-width", 2)
+//                 .attr("fill", "none");
 
 	svg.selectAll("path").moveToFront();
 	svg.selectAll("text").moveToFront();
