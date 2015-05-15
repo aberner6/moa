@@ -7,7 +7,24 @@ body{
   background:black;
   /*opacity:.5;*/
 }
-
+#reset{
+  letter-spacing: 2px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  border-left: 1px gray solid;
+  border-right: 1px gray solid;
+  font: 14px 'Gotham';
+  text-transform: none;
+  color: gray;
+  padding: 5px;
+  margin-left: 1.65%;
+  opacity: .7;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 75px;
+  display:none;
+  border-radius: 4px;
+}
 .topRect {
   fill: url(#temperature-gradient);
 }

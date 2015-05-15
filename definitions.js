@@ -1,34 +1,6 @@
-function renderBackground(){
-// var projection = d3.geo.mercator()
-//     .scale(870)
-//     .translate([width/2, 410]);
-// var projection = d3.geo.mercator()
-//     .scale(135 * height
-//     .translate([width / 2, height / 2]);
 
-// var path = d3.geo.path()
-//     .projection(projection)
-
-	d3.csv("mid.csv", function(error, data) {
-		for (var i=0; i<data.length/50; i++){
-			var thisData = data;
-        var bcirc = svg.selectAll("path")
-            .data(thisData)
-            .enter().append("svg:path")
-          .datum(function(d) {
-          			console.log(d[0])
-                return {type: "Point", coordinates: [d[1], d[0]], radius:4 };
-          })     
-            .attr("class", "b-circ")
-            .attr("d",path) 
-            .attr("fill","none")
-            .attr("stroke","white")
-        }
-
-    })
-}
-// var A = [['x','y','date']];  // initialize array of rows with header row as 1st item
 var dataIs = [];
+// var innerCircs, outerCircs;
 function renderData()
 {
 	var innerCircs = svg.selectAll("innerCircs").data(data);
@@ -37,7 +9,7 @@ function renderData()
 	var now = Date.now();
 	var limit = eventWindow;
 
-	outerCircs.enter().append("circle")
+	outerCircs.enter().append("circle").attr("class","outerCircs")
         .attr("stroke", function(d){
         	// console.log(d.type);
         	// console.log(d.color);
@@ -48,7 +20,7 @@ function renderData()
 		.attr("stroke-opacity",0)
 		.attr("stroke-width",3)
 
-	innerCircs.enter().append("circle")
+	innerCircs.enter().append("circle").attr("class","innerCircs")
         .attr("fill", function(d){
 			return d.color;
 		})
@@ -56,16 +28,35 @@ function renderData()
 			return d.color;
 		})
 		.attr("stroke-width",1)
-		.attr("r",2)
+		.attr("r",3)
 		.attr("opacity",0)
+		// .on("mouseover", function(d){
+		// 	d3.select(this)
+		// 	.transition()
+		// 	.attr("r",10)
+		// })
+		// .on("mouseout", function(d){
+		// 	d3.select(this)
+		// 	.transition()
+		// 	.attr("r",3)
+		// })
         .attr("cx", function(d) { return d.projection[0]; })
         .attr("cy", function(d) { return d.projection[1]; })
 		.transition()
 		.duration(1000)
 		.attr("opacity",1)
+
 		// .attr("fill","white")
 		// .attr("stroke","white")
-
+ $('.innerCircs').tipsy({ 
+        gravity: 's', 
+        html: true, 
+        title: function() {
+          var d = this.__data__;
+          console.log(d)
+          return d.strategy;
+        }
+      });
     outerCircs
         .attr("cx", function(d) { return d.projection[0]; })
         .attr("cy", function(d) { return d.projection[1]; })
@@ -74,11 +65,21 @@ function renderData()
 		.attr("stroke-opacity",1)
   .transition()
       .ease("linear")
-      .duration(3000)
+      .duration(1000)
       .style("stroke-opacity", 1e-6)
 		.attr("stroke-width",.1)
       .attr("r", 20)
       .remove();
+
+ $('.outerCircs').tipsy({ 
+        gravity: 's', 
+        html: true, 
+        title: function() {
+          var d = this.__data__;
+          console.log(d)
+          return d.strategy;
+        }
+      });
 		// .transition()
 		// .duration(2100)
 		// .each("end", function(d,i){
@@ -220,7 +221,7 @@ var lineData = [];
                 		return 1;
                 	}
                 	else if(e.day){
-                		return .4;
+                		return .35;
                 	}else if(!e.day){
                 		return 0;
                 	}

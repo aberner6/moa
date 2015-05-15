@@ -39,9 +39,6 @@ var projection = d3.geo.mercator()
     .scale(175 * height / 847)
     .translate([width / 2, height / 2.8]);
 
-// var projection2 = d3.geo.mercator()
-//     .scale(175 * height / 847)
-//     .translate([width / 2, height/2.8]);
 /*
 var projection = d3.geo.equirectangular()
     .translate([width / 2, height / 2])
@@ -49,7 +46,6 @@ var projection = d3.geo.equirectangular()
     .precision(.1);
 */
 var path = d3.geo.path().projection(projection);
-// var path2 = d3.geo.path().projection(projection2);
 
 
 var lat_tz = d3.range(-180,180,15).map(function (lat){
@@ -74,29 +70,10 @@ d3.json("world.json", function(error, world) {
 		.attr("stroke-width",.5)
 		.attr("fill","none")
 
-	// var night = svg.append("path")
- //      .attr("class", "night")
- //      .attr("fill","white")
- //      .attr("d", path2)
- //      .attr("opacity",.2);
-
-// renderBackground();
 	redraw();
 	setInterval(redraw, 5 * 60 * 1000);
 
 	function redraw() {
-	// var night = svg.append("line")
- //      .attr("class", "night")
- //      .attr("y1",0)
- //      .attr("y2",1300)
- //      .attr("fill","none")
- //      .attr("stroke","white")
- //      .attr("opacity",1)
-	// 	.attr("x1",(circle.origin(antipode(solarPosition(new Date))))[1])
-	// 	.attr("x2",(circle.origin(antipode(solarPosition(new Date))))[1]);
-
-		// night.datum(circle.origin(antipode(solarPosition(new Date)))).attr("d", path2);
-	
 		setTimeZone();
 	}
 
@@ -106,10 +83,7 @@ d3.json("world.json", function(error, world) {
 
 	pusher = new Pusher('54da1f9bddbf14929983');
 	channel = pusher.subscribe('world_map');
-		// console.log(channel)
 	channel.bind('login', function(point) {
-		// console.log(point)
-
 		loadPoint(point);
 	});
 
@@ -120,6 +94,7 @@ d3.json("world.json", function(error, world) {
 	// });
 
 });
+
 
 d3.select(self.frameElement).style("height", height + "px");
 

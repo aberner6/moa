@@ -3,19 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="tipsy.css">
 		<title></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<div class="map">
 		    <svg>
-				<defs>
-					<radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-						<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
-						<stop offset="100%" style="stop-color:rgb(255,140,0);stop-opacity:0" />
-					</radialGradient>
-				</defs>
-		    </svg>
+		    </svg>			
+		<!-- <div id="reset">RESET MAP</div> -->
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.8.0/lodash.min.js"></script>
@@ -24,7 +20,9 @@
 		<script src="http://d3js.org/topojson.v1.min.js"></script>
 		<script src="main.js"></script>
 		<!-- // <script src="d3.slider.js"></script> -->
-		<script src="colorbrewer.js"></script>
+		<script src="jquery.tipsy.js"></script>
+
+		<!-- // <script src="colorbrewer.js"></script> -->
 		<script src="definitions.js"></script>
 
 	</body>
