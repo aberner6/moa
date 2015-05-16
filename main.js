@@ -31,20 +31,37 @@ function resizeGraph(){
    	width = realWidth;
 	height = width;
 
-	svgEl.attr("width", width).attr("height", height);
+	svgEl.attr("width", width).attr("height", height)
+	  .attr("viewBox", "0 0 " + width + " " + height )
+	  .attr("preserveAspectRatio", "xMinYMin")
+	  .attr("pointer-events", "all")
 }
 resizeGraph();
+    var initialZoom = (175 * height / 847);
+    var maxZoom = 800;
 
 var projection = d3.geo.mercator()
-    .scale(175 * height / 847)
+    .scale(initialZoom)
     .translate([width / 2, height / 2.8]);
+
+    // var zoom = d3.behavior.zoom(true)
+    //             .scale( projection.scale() )
+    //             .scaleExtent([(175 * height / 847), 800])
+    //             .on("zoom", globeZoom);
+    // svgEl.call(zoom)
+    //           .on('dblclick.zoom', null);
 
     var zoom = d3.behavior.zoom(true)
                 .scale( projection.scale() )
-                .scaleExtent([(175 * height / 847), 800])
-                .on("zoom", globeZoom);
+                .translate(projection.translate())
+                .scaleExtent([initialZoom, maxZoom])
+				.on("zoom", function(){
+					var t = d3.event.translate;
+					var s = d3.event.scale;
+					zoomInOut(t, s);
+				})
     svgEl.call(zoom)
-              .on('dblclick.zoom', null);
+    //           .on('dblclick.zoom', null);
 
 /*
 var projection = d3.geo.equirectangular()
@@ -126,6 +143,38 @@ function globeZoom(){
         // outerCircs.attr("cy", function(d) { return p.projection[1]; })
 	}
 }
+
+var showReset = false;
+var zoomInOut = function(t, s) {
+	if (showReset==true){
+		$('#reset').slideDown( "slow", function() {
+	})
+	}
+	if (showReset==false){
+		$('#reset').slideUp( "slow", function() {
+	})	
+	}
+	// if (s>initialZoom+10){
+  if (d3.event) {
+    	var _scale = d3.event.scale;
+		var _trans = d3.event.translate;
+    	projection.scale(_scale);
+    	projection.translate(_trans);
+		showReset = true;
+		console.log(_trans);
+		// Reproject everything in the map
+		countries.transition().duration(1).attr('d', path);
+
+		d3.selectAll(".outerCircs").transition().duration(1)
+        .attr("cx", function(d) { return projection(d.projection)[0]; })
+        .attr("cy", function(d) { return projection(d.projection)[1]; })
+		d3.selectAll(".innerCircs").transition().duration(1)
+        .attr("cx", function(d) { return projection(d.projection)[0]; })
+        .attr("cy", function(d) { return projection(d.projection)[1]; })
+	}
+};
+
+
 
 d3.select(self.frameElement).style("height", height + "px");
 
