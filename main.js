@@ -154,14 +154,16 @@ var zoomInOut = function(t, s) {
 		$('#reset').slideUp( "slow", function() {
 	})	
 	}
-	// if (s>initialZoom+10){
-  if (d3.event) {
+  // if (d3.event) {
+  	if (s>initialZoom+10){
+		showReset = true;
+
     	var _scale = d3.event.scale;
 		var _trans = d3.event.translate;
+    	
     	projection.scale(_scale);
     	projection.translate(_trans);
-		showReset = true;
-		console.log(_trans);
+		// console.log(_trans);
 		// Reproject everything in the map
 		countries.transition().duration(1).attr('d', path);
 
@@ -172,8 +174,31 @@ var zoomInOut = function(t, s) {
         .attr("cx", function(d) { return projection(d.projection)[0]; })
         .attr("cy", function(d) { return projection(d.projection)[1]; })
 	}
+	else{
+		showReset = false;
+	}
 };
 
+d3.select("#reset").on("click", resetZoom);
+
+function resetZoom(){
+	showReset = false;
+	// zoom.translate([width / 2, height / 2]).scale(initialZoom);
+	projection.translate([width / 2, height / 2.8]).scale(initialZoom);
+
+	// Reproject everything in the map
+	countries.transition().duration(1)
+		 .attr("d", path);
+
+	d3.selectAll(".outerCircs").transition().duration(1)
+        .attr("cx", function(d) { return projection(d.projection)[0]; })
+        .attr("cy", function(d) { return projection(d.projection)[1]; })
+	d3.selectAll(".innerCircs").transition().duration(1)
+        .attr("cx", function(d) { return projection(d.projection)[0]; })
+        .attr("cy", function(d) { return projection(d.projection)[1]; })
+	$('#reset').slideUp( "slow", function() {
+	})			
+}
 
 
 d3.select(self.frameElement).style("height", height + "px");
