@@ -24,6 +24,7 @@ function renderData()
         .attr("fill", function(d){
 			return d.color;
 		})
+		// .attr("fill","none")
         .attr("stroke", function(d){
 			return d.color;
 		})
@@ -44,7 +45,7 @@ function renderData()
         .attr("cy", function(d) { return projection(d.projection)[1]; })
 		.transition()
 		.duration(1000)
-		.attr("opacity",1)
+		.attr("opacity",.01)
 
 		// .attr("fill","white")
 		// .attr("stroke","white")
@@ -53,7 +54,7 @@ function renderData()
         html: true, 
         title: function() {
           var d = this.__data__;
-          console.log(d)
+          // console.log(d)
           return d.strategy;
         }
       });
@@ -78,7 +79,7 @@ function renderData()
         html: true, 
         title: function() {
           var d = this.__data__;
-          console.log(d)
+          // console.log(d)
           return d.strategy;
         }
       });
@@ -94,6 +95,25 @@ function renderData()
 		// 		.remove();			
 		// 	// })
 		// })
+
+
+//these will represent the quantity of AUTH0 so far, for example...
+	// strategies[point.strategy].count++;
+// console.log(strategies[point.strategy])
+	// innerCircs = svg.selectAll("innerCircs").data(data);
+	// innerCircs.enter().append("circle").attr("class","innerCircs")
+ //        .attr("fill", function(d){
+	// 		return d.color;
+	// 	})
+	// 	// .attr("fill","none")
+ //        .attr("stroke", function(d){
+	// 		return d.color;
+	// 	})
+	// 	.attr("stroke-width",1)
+	// 	.attr("r",3)
+	// 	.attr("opacity",0)
+
+
 }
 
 function setTimeZone()
@@ -160,13 +180,13 @@ function setTimeZone()
 			return e.x + e.width / 2;
 		})
 		.attr("y", function(e){
-		  //20
-		        	if(e.hour<=12){
-		        		return yArc1Scale(e.hour)+18;
-		    		}
-		        	if(e.hour>12){
-		        		return yArc2Scale(e.hour)+18;
-		    		}			
+		  return 18
+		      //   	if(e.hour<=12){
+		      //   		return yArc1Scale(e.hour)+18;
+		    		// }
+		      //   	if(e.hour>12){
+		      //   		return yArc2Scale(e.hour)+18;
+		    		// }			
 		})
 		.attr('opacity', function(e){
                 	if(e.hour==now.getHours()&&(e.day)){
@@ -195,15 +215,15 @@ var lineData = [];
 					return e.x + (e.width / 2)-14;
 				})
 		        .attr("y", function(e){
-		        	// "4"
-		        	if(e.hour<=12){
-					// lineData.push({x:(e.x + (e.width / 2)-12),y:yArc1Scale(e.hour)});
-		        		return yArc1Scale(e.hour)
-		    		}
-		        	if(e.hour>12){
-					// lineData.push({x:(e.x + (e.width / 2)-12),y:yArc2Scale(e.hour)});
-		        		return yArc2Scale(e.hour)
-		    		}
+		        	"4"
+		   //      	if(e.hour<=12){
+					// // lineData.push({x:(e.x + (e.width / 2)-12),y:yArc1Scale(e.hour)});
+		   //      		return yArc1Scale(e.hour)
+		   //  		}
+		   //      	if(e.hour>12){
+					// // lineData.push({x:(e.x + (e.width / 2)-12),y:yArc2Scale(e.hour)});
+		   //      		return yArc2Scale(e.hour)
+		   //  		}
 		        })
                 .attr("width", "28")
                 .attr("height", "28")
@@ -233,8 +253,8 @@ var lineData = [];
                 moons.enter()
             	.append("svg:image")
                 .attr("xlink:href", "/moon_white2-01.png")
-                .attr("width", "17")
-                .attr("height", "17")
+                .attr("width", "20")
+                .attr("height", "20")
                 .attr("opacity",function(e){
                 	// console.log(e);
                 	if(e.hour==now.getHours()&&(!e.day)){
@@ -245,16 +265,16 @@ var lineData = [];
                 	}
                 })
 				.attr("x", function(e){
-					return e.x + (e.width / 2)-5;
+					return e.x + (e.width / 2)-7;
 				})
 		        .attr("y", function(e){
-		        	// "15"
-		        	if(e.hour<=12){
-		        		return yArc1Scale(e.hour)+10;
-		    		}
-		        	if(e.hour>12){
-		        		return yArc2Scale(e.hour)+10;
-		    		}
+		        	return 7.5;
+		      //   	if(e.hour<=12){
+		      //   		return yArc1Scale(e.hour)+10;
+		    		// }
+		      //   	if(e.hour>12){
+		      //   		return yArc2Scale(e.hour)+10;
+		    		// }
 		        })
                 .transition()
                 .ease("linear")
@@ -301,9 +321,12 @@ function loadPoint(point)
 	}
 
 	strategies[point.strategy].count++;
-
 	point.color = strategies[point.strategy].color
 	point.created_at = Date.now();
+
+// if(point.geo.lng)
+//can i find a way to say if this longitude has already been placed, 
+//increase the radius of the existing circle?
 
 	point.projection = [point.geo.lng, point.geo.lat];
 	data.push(point);

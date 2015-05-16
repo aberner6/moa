@@ -106,11 +106,12 @@ d3.json("world.json", function(error, world) {
 	// 	console.log(message);
 	// };
 })
-var p;
+// var p;
 	pusher = new Pusher('54da1f9bddbf14929983');
 	channel = pusher.subscribe('world_map');
 	channel.bind('login', function(point) {
-		p = point;
+		// console.log(point);
+		// p = point;
 		loadPoint(point);
 	});
 
