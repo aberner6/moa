@@ -1,10 +1,10 @@
 
 var dataIs = [];
-// var innerCircs, outerCircs;
+var innerCircs, outerCircs;
 function renderData()
 {
-	var innerCircs = svg.selectAll("innerCircs").data(data);
-	var outerCircs = svg.selectAll("outerCircs").data(data);
+	innerCircs = svg.selectAll("innerCircs").data(data);
+	outerCircs = svg.selectAll("outerCircs").data(data);
 
 	var now = Date.now();
 	var limit = eventWindow;
@@ -40,8 +40,8 @@ function renderData()
 		// 	.transition()
 		// 	.attr("r",3)
 		// })
-        .attr("cx", function(d) { return d.projection[0]; })
-        .attr("cy", function(d) { return d.projection[1]; })
+        .attr("cx", function(d) { return projection(d.projection)[0]; })
+        .attr("cy", function(d) { return projection(d.projection)[1]; })
 		.transition()
 		.duration(1000)
 		.attr("opacity",1)
@@ -58,8 +58,10 @@ function renderData()
         }
       });
     outerCircs
-        .attr("cx", function(d) { return d.projection[0]; })
-        .attr("cy", function(d) { return d.projection[1]; })
+        .attr("cx", function(d) { return projection(d.projection)[0]; })
+        .attr("cy", function(d) { return projection(d.projection)[1]; })
+        // .attr("cx", function(d) { return d.projection[0]; })
+        // .attr("cy", function(d) { return d.projection[1]; })
         .transition()
         // .dur
 		.attr("stroke-opacity",1)
@@ -303,7 +305,7 @@ function loadPoint(point)
 	point.color = strategies[point.strategy].color
 	point.created_at = Date.now();
 
-	point.projection = projection([point.geo.lng, point.geo.lat]);
+	point.projection = [point.geo.lng, point.geo.lat];
 	data.push(point);
 	renderData();
 	//renderStrategies();
