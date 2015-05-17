@@ -1,8 +1,19 @@
 
 var dataIs = [];
 var innerCircs, outerCircs;
+var maxTime, minTime;
 function renderData()
 {
+	minTime = d3.min(data,function(d){
+		return d.created_at;
+	})
+	maxTime = Date.now();
+// for(i=0; i<data.length; i++){console.log(d3.min(data[i].created_at))}
+	// console.log(minTime);
+	var transScale = d3.scale.linear()
+		.domain([minTime, maxTime])
+		.range([500,3000])
+
 	innerCircs = svg.selectAll("innerCircs").data(data);
 	outerCircs = svg.selectAll("outerCircs").data(data);
 
@@ -44,8 +55,11 @@ function renderData()
         .attr("cx", function(d) { return projection(d.projection)[0]; })
         .attr("cy", function(d) { return projection(d.projection)[1]; })
 		.transition()
-		.duration(1000)
-		.attr("opacity",.01)
+		.duration(function(d){
+			// return 2000;
+			return transScale(d.created_at)
+		})
+		.attr("opacity",1)
 
 		// .attr("fill","white")
 		// .attr("stroke","white")
@@ -68,7 +82,10 @@ function renderData()
 		.attr("stroke-opacity",1)
   .transition()
       .ease("linear")
-      .duration(1000)
+		.duration(function(d){
+			// return 2000;
+			return transScale(d.created_at)
+		})
       .style("stroke-opacity", 1e-6)
 		.attr("stroke-width",.1)
       .attr("r", 20)
