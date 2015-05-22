@@ -2,8 +2,13 @@
 var dataIs = [];
 var innerCircs, outerCircs;
 var maxTime, minTime;
+var rMax = 100;
+var durMax = 100;
 function renderData()
 {
+	d3.selectAll(".innerCircs").remove();
+	d3.selectAll(".outerCircs").remove();
+	
 	minTime = d3.min(data,function(d){
 		return d.created_at;
 	})
@@ -13,35 +18,33 @@ function renderData()
 	var transScale = d3.scale.linear()
 		.domain([minTime, maxTime])
 		.range([500,3000])
+	var trans2Scale = d3.scale.linear()
+		.domain([minTime, maxTime])
+		.range([500,2000])
 
+	var rScale = d3.scale.linear()
+		.domain([0, rMax])
+		.range([20, 15])
+	var durScale = d3.scale.linear()
+		.domain([0, durMax])
+		.range([1200, 800])
 	innerCircs = svg.selectAll("innerCircs").data(data);
 	outerCircs = svg.selectAll("outerCircs").data(data);
 
 	var now = Date.now();
 	var limit = eventWindow;
 
-	outerCircs.enter().append("circle").attr("class","outerCircs")
-        .attr("stroke", function(d){
-        	// console.log(d.type);
-        	// console.log(d.color);
-			return d.color;
-		})
-        .attr("fill","none")
-		.attr("r",0)
-		.attr("stroke-opacity",0)
-		.attr("stroke-width",3)
-
 	innerCircs.enter().append("circle").attr("class","innerCircs")
         .attr("fill", function(d){
 			return d.color;
 		})
 		// .attr("fill","none")
-        .attr("stroke", function(d){
-			return d.color;
-		})
-		.attr("stroke-width",1)
+  //       .style("stroke", function(d){
+		// 	return d.color;
+		// })
+		.style("stroke-width",1)
 		.attr("r",3)
-		.attr("opacity",0)
+		.style("opacity",0)
 		// .on("mouseover", function(d){
 		// 	d3.select(this)
 		// 	.transition()
@@ -54,15 +57,24 @@ function renderData()
 		// })
         .attr("cx", function(d) { return projection(d.projection)[0]; })
         .attr("cy", function(d) { return projection(d.projection)[1]; })
-		.transition()
-		.duration(function(d){
-			// return 2000;
-			return transScale(d.created_at)
-		})
-		.attr("opacity",1)
+        .transition()
+	      .ease("linear")
+	    		// .duration(function(d){
+		// 	return 1000;
+		// 	// return transScale(d.created_at)
+		// })
+		.style("opacity",1)
+        .duration(800)
+	      .remove();
 
-		// .attr("fill","white")
-		// .attr("stroke","white")
+		// .transition()
+		// .duration(function(d){
+		// 	return 1000;
+		// 	// return transScale(d.created_at)
+		// })
+		// .style("opacity",1)
+
+
  $('.innerCircs').tipsy({ 
         gravity: 's', 
         html: true, 
@@ -72,24 +84,44 @@ function renderData()
           return d.strategy;
         }
       });
-    outerCircs
+ 	outerCircs.enter().append("circle").attr("class","outerCircs")
+        .style("stroke", function(d){
+			return d.color;
+		})
+        .attr("fill","none")
+		.attr("r",0)
+		.style("stroke-width", 3)
+			// ,function(d,i){
+			// return 
+		// })
         .attr("cx", function(d) { return projection(d.projection)[0]; })
         .attr("cy", function(d) { return projection(d.projection)[1]; })
-        // .attr("cx", function(d) { return d.projection[0]; })
-        // .attr("cy", function(d) { return d.projection[1]; })
-        .transition()
-        // .dur
-		.attr("stroke-opacity",1)
   .transition()
-      .ease("linear")
-		.duration(function(d){
-			// return 2000;
-			return transScale(d.created_at)
-		})
-      .style("stroke-opacity", 1e-6)
-		.attr("stroke-width",.1)
-      .attr("r", 20)
-      .remove();
+	      .ease("linear")
+	      .duration(
+	      	// 800)
+	      	function(d){
+	      	if(data.length>rMax){ rMax = data.length };
+	      	return durScale(data.length);
+	      })
+	      		.style("stroke-width", 1)
+	      .style("stroke-opacity", 1e-6)
+	      // function(d){
+	      	// return transScale(d.created_at)
+			// return 1 - (now - t.created_at) / limit;
+        	// })//1e-6)
+	      // .style("stroke-width", .5)
+	  //     .ease("linear")
+			// .duration(function(d){
+			// 	// return 2000;
+			// 	return trans2Scale(d.created_at)
+			// })
+	      .attr("r", 20)
+	      // 	function(d,i){
+	      // 	if(data.length>durMax){ durMax = data.length };
+	      // 	return rScale(data.length)
+	      // })
+	      .remove();
 
  $('.outerCircs').tipsy({ 
         gravity: 's', 
@@ -154,10 +186,10 @@ function setTimeZone()
 			return e.width;
 		})
 		.attr('height',height)
-		.attr('stroke-width','.1')
+		// .attr('stroke-width','.1')
     .style("stroke-dasharray", "1,4")
-		.attr('stroke','lightgray')
-		.attr("opacity",1)
+		.attr('stroke','darkgray')
+		.attr("opacity",.3)
 
 	tzs.attr("fill-opacity", 1)
 	.attr("fill","none")
@@ -227,7 +259,7 @@ var lineData = [];
             var suns = svg.selectAll("img").data(lat_tz);
                 suns.enter()
             	.append("svg:image")
-                .attr("xlink:href", "/sun_white2-01.png")
+                .attr("xlink:href", "sunwhite.png")
 				.attr("x", function(e){
 					return e.x + (e.width / 2)-14;
 				})
@@ -269,7 +301,7 @@ var lineData = [];
             var moons = svg.selectAll("img").data(lat_tz);
                 moons.enter()
             	.append("svg:image")
-                .attr("xlink:href", "/moon_white2-01.png")
+                .attr("xlink:href", "moonwhite.png")
                 .attr("width", "20")
                 .attr("height", "20")
                 .attr("opacity",function(e){
