@@ -17,16 +17,20 @@ body{
   font: 14px 'Gotham';
   text-transform: none;
   text-align: center;
-  color: gray;
+  color: white;
   padding: 5px;
+
   /*margin-left: 1.65%;*/
-  opacity: .7;
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.3);
   bottom: 75px;
-  width:10%;
+  width:8%;
   left: 45%;
   display:none;
   border-radius: 4px;
+}
+#reset:hover{
+  opacity:.5;
 }
 .topRect {
   fill: url(#temperature-gradient);
