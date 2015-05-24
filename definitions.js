@@ -1,6 +1,6 @@
 
 var dataIs = [];
-var innerCircs, outerCircs;
+var innerCircs, outerCircs, nameCircs;
 var maxTime, minTime;
 var rMax = 100;
 var durMax = 100;
@@ -31,6 +31,39 @@ function renderData()
 	innerCircs = svg.selectAll("innerCircs").data(data);
 	outerCircs = svg.selectAll("outerCircs").data(data);
 
+var ordNames = d3.scale.ordinal()
+	.domain([uniqueNames])
+	.range([width/2-20,width/2+20])
+
+	// nameCircs = svg.selectAll("nameCircs").data(data);
+	// nameCircs.enter().append("rect").attr("class","nameCircs")
+ //        .attr("fill", function(d){
+	// 		return d.color;
+	// 	})
+ //        .attr("stroke", function(d){
+	// 		return d.color;
+	// 	})
+	// 	.attr("opacity",.3)
+	// 	.attr("x",function(d){
+	// 		return ordNames(d.name);
+	// 	})
+	// 	.attr("y",function(d){
+	// 		return height*2/3-50;//-d.count;
+	// 	})
+	// 	.attr("width",10)
+	// 	.attr("height", function(d){
+	// 		// if(d.)
+	// 		return d.count;
+	// 	})
+	// 	.transition()
+	//       .duration(function(d){
+	//       	if(data.length>rMax){ rMax = data.length };
+	//       	return durScale(data.length);
+	//       })
+	//     .remove();
+
+
+
 	var now = Date.now();
 	var limit = eventWindow;
 
@@ -39,9 +72,9 @@ function renderData()
 			return d.color;
 		})
 		// .attr("fill","none")
-  //       .style("stroke", function(d){
-		// 	return d.color;
-		// })
+        .style("stroke", function(d){
+			return d.color;
+		})
 		.style("stroke-width",1)
 		.attr("r",3)
 		.style("opacity",0)
@@ -59,12 +92,18 @@ function renderData()
         .attr("cy", function(d) { return projection(d.projection)[1]; })
         .transition()
 	      .ease("linear")
-	    		// .duration(function(d){
-		// 	return 1000;
-		// 	// return transScale(d.created_at)
+	 //    .duration(function(d){
+		// 	// return 1000;
+		// 	return transScale(d.created_at)
 		// })
+	      .duration(
+	      	// 800)
+	      	function(d){
+	      	if(data.length>rMax){ rMax = data.length };
+	      	return durScale(data.length);
+	      })
 		.style("opacity",1)
-        .duration(800)
+        // .duration(800)
 	      .remove();
 
 		// .transition()
@@ -186,10 +225,10 @@ function setTimeZone()
 			return e.width;
 		})
 		.attr('height',height)
-		// .attr('stroke-width','.1')
-    .style("stroke-dasharray", "1,4")
-		.attr('stroke','darkgray')
-		.attr("opacity",.3)
+		.attr('stroke-width','.1')
+    // .style("stroke-dasharray", "1,4")
+		.attr('stroke','white')
+		// .attr("opacity",1)
 
 	tzs.attr("fill-opacity", 1)
 	.attr("fill","none")
@@ -260,6 +299,7 @@ var lineData = [];
                 suns.enter()
             	.append("svg:image")
                 .attr("xlink:href", "sunwhite.png")
+            	.attr("class","suns")
 				.attr("x", function(e){
 					return e.x + (e.width / 2)-14;
 				})
@@ -302,6 +342,7 @@ var lineData = [];
                 moons.enter()
             	.append("svg:image")
                 .attr("xlink:href", "moonwhite.png")
+            	.attr("class","moons")
                 .attr("width", "20")
                 .attr("height", "20")
                 .attr("opacity",function(e){
@@ -355,8 +396,17 @@ var lineData = [];
 	svg.selectAll("path").moveToFront();
 	svg.selectAll("text").moveToFront();
 	svg.selectAll("circle").moveToFront();
+	svg.selectAll(".moons, .suns").moveToFront();
 
 }
+
+var names = [];
+var uniqueNames = [];
+var uniqueCount = 0;
+var summary = [];
+var dataNames, set;
+var maxIs;
+// var
 
 function loadPoint(point)
 {
@@ -370,13 +420,23 @@ function loadPoint(point)
 	}
 
 	strategies[point.strategy].count++;
+
+	names.push(point.strategy);
+
+	$.each(names, function(i, el){
+		var index = 0;
+    	if($.inArray(el, uniqueNames) === -1){
+    	 uniqueNames.push(el);	
+    	}
+	});
+	point.count = strategies[point.strategy].count;
 	point.color = strategies[point.strategy].color
 	point.created_at = Date.now();
 
 // if(point.geo.lng)
 //can i find a way to say if this longitude has already been placed, 
 //increase the radius of the existing circle?
-
+	point.name = strategies[point.strategy].name;
 	point.projection = [point.geo.lng, point.geo.lat];
 	data.push(point);
 	renderData();
