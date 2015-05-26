@@ -398,6 +398,38 @@ DAT.Globe = function(container, opts) {
     this._time = t;
   });
 
+  function addRealTimePoint(lat, lng, size) {
+    var baseGeometry = new THREE.Geometry();
+
+      addPoint(lat, lng, size, colorFn(size), baseGeometry);
+      var points;
+
+        if (this.is_animated === false) {
+          points = new THREE.Mesh(baseGeometry, new THREE.MeshBasicMaterial({
+                color: 0xffffff,
+                vertexColors: THREE.FaceColors,
+                morphTargets: false
+              }));
+        } else {
+          if (baseGeometry.morphTargets.length < 8) {
+            console.log('t l',baseGeometry.morphTargets.length);
+            var padding = 8-baseGeometry.morphTargets.length;
+            console.log('padding', padding);
+            for(var i=0; i<=padding; i++) {
+              console.log('padding',i);
+              baseGeometry.morphTargets.push({'name': 'morphPadding'+i, vertices: this._baseGeometry.vertices});
+            }
+          }
+          points = new THREE.Mesh(baseGeometry, new THREE.MeshBasicMaterial({
+                color: 0xffffff,
+                vertexColors: THREE.FaceColors,
+                morphTargets: true
+              }));
+        }
+        scene.add(points);
+    }
+
+  this.addRealTimePoint = addRealTimePoint;
   this.addData = addData;
   this.createPoints = createPoints;
   this.renderer = renderer;

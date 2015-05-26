@@ -178,18 +178,43 @@ var pusher = null
       channel = pusher.subscribe('world_map');
       var latlngArray = [];
       var whatsThis = [];
-      var newthing = [];
-      channel.bind('login', function(p) {
-        whatsThis.push({0:p.geo.lat,1:p.geo.lng});
+      var newthing = [
+          'new',
+          [0,0,1]
+      ];
+
+      var visible = false;
+
+      // channel.bind('login', function(p) {
         
-        for(i=0; i<whatsThis.length; i++){ 
-          latlngArray.push(whatsThis[i][0], whatsThis[i][1],Math.random(0,1))
-        }
-        newthing[0] = 1990;
-        newthing[1] = latlngArray;
+
+        // if (!visible ){
+        //   whatsThis.push({0:p.geo.lat,1:p.geo.lng});
+          
+        //   for(i=0; i<whatsThis.length; i++){ 
+        //     latlngArray.push(whatsThis[i][0], whatsThis[i][1],Math.random(0,1))
+        //   }
+        //   newthing[0] = 1990;
+        //   newthing[1] = latlngArray;
+
+        //   visible = true;
+        //   showGlobe()
+        // }
+        // else
+        // {
+          // globe.addRealTimePoint(p.geo.lat, p.geo.lng, 0xffffff);  
+        // }
+
+        
 
         // addLine(scene,point.geo.lat, point.geo.lng, 0xff0000)
+      // });
+      showGlobe();
+
+      channel.bind('login', function(p) {
+        globe.addRealTimePoint(p.geo.lat, p.geo.lng, 5); 
       });
+
       function showGlobe(){
           if(newthing[1].length>0){
             globe.addData(newthing[1], {format: 'magnitude', name: newthing[0].toString(), animated: true});
