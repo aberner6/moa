@@ -39,10 +39,13 @@ function resizeGraph(){
 resizeGraph();
     var initialZoom = (148 * height / 847);
     var maxZoom = 800;
+    // var initialZoom = (110 * height / 847);
 
 var projection = d3.geo.mercator()
     .scale(initialZoom)
     .translate([width / 1.92, height / 2.22]);
+    // .translate([width / 2.05, height / 1.75]);
+
 
     // var zoom = d3.behavior.zoom(true)
     //             .scale( projection.scale() )
@@ -79,17 +82,18 @@ svg.append("rect")
     .attr("height", height + "px");
 
 svg = svg.append("g")
-    .attr("transform", "translate(" + translate0 + ")scale(" + scale0 + ")")
+    .attr("transform", "translate(" + translate0 + ")")
+    	//scale(" + scale0 + ")")
     
     // .call(d3.behavior.zoom().scaleExtent([1,8]).on("zoom", zoomIt))
     // .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
   .append("g");
 
-svg.append("image")
-    .attr("width",  imgWidth + "px")
-    .attr("height", imgHeight + "px")
-    .attr("opacity",.3)
-    .attr("xlink:href", "dottedmap.svg");
+// svg.append("image")
+//     .attr("width",  width + "px")
+//     .attr("height", height + "px")
+//     .attr("opacity",.3)
+//     .attr("xlink:href", "dottedmap.svg");
 
 function zoomIt() {
   svg.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
@@ -142,13 +146,13 @@ var lat_tz = d3.range(-180,180,15).map(function (lat){
 
 var countries;
 d3.json("world.json", function(error, world) {
-	// countries = svg.append("path")
-	// 	.classed('world', true)
-	// 	.datum( topojson.feature(world, world.objects.land) )
-	// 	.attr("d", path)
-	// 	.attr("stroke","rgb(125,95,95)")//"#eb5424")//"rgb(154,54,54)")
-	// 	.attr("stroke-width",1)
-	// 	.attr("fill","black")
+	countries = svg.append("path")
+		.classed('world', true)
+		.datum( topojson.feature(world, world.objects.land) )
+		.attr("d", path)
+		.attr("stroke","rgb(125,95,95)")//"#eb5424")//"rgb(154,54,54)")
+		.attr("stroke-width",1)
+		.attr("fill","black")
 
 	redraw();
 	setInterval(redraw, 5 * 60 * 1000);
@@ -227,7 +231,7 @@ var zoomInOut = function(t, s) {
     	projection.translate(_trans);
 		// console.log(_trans);
 		// Reproject everything in the map
-		// countries.transition().duration(1).attr('d', path);
+		countries.transition().duration(1).attr('d', path);
 
 		d3.selectAll(".outerCircs").transition().duration(1)
         .attr("cx", function(d) { return projection(d.projection)[0]; })
@@ -254,8 +258,8 @@ function resetZoom(){
 	projection.translate([width / 2, height / 2.8]).scale(initialZoom);
 
 	// Reproject everything in the map
-	// countries.transition().duration(1)
-	// 	 .attr("d", path);
+	countries.transition().duration(1)
+		 .attr("d", path);
 
 	d3.selectAll(".outerCircs").transition().duration(1)
         .attr("cx", function(d) { return projection(d.projection)[0]; })

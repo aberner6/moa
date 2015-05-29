@@ -18,7 +18,8 @@ DAT.Globe = function(container, opts) {
   
   var colorFn = opts.colorFn || function(x) {
     var c = new THREE.Color();
-    c.setHSL(.1, 1.0, 0.5 );
+    console.log(x/10)
+    c.setHSL(x/10, 1.0, 0.5 );
     return c;
   };
 // var colorFn = opts.colorFn || function(x) {
@@ -411,15 +412,16 @@ var Shaders = {
     this._time = t;
   });
 
-  function addRealTimePoint(lat, lng, size) {
-    var baseGeometry = new THREE.Geometry();
+  function addRealTimePoint(lat, lng, size, whichNum) {
+    var baseGeometry = new THREE.Geometry;
 
-      addPoint(lat, lng, size, colorFn(size), baseGeometry);
+      addPoint(lat, lng, size, colorFn(whichNum), baseGeometry);
       var points;
 
         if (this.is_animated === false) {
-          points = new THREE.Mesh(baseGeometry, new THREE.MeshBasicMaterial({
+          points = new THREE.Mesh(baseGeometry, new THREE.MeshPhongMaterial({
                 color: 0xffffff,
+                shininess:50,
                 vertexColors: THREE.FaceColors,
                 morphTargets: false
               }));
@@ -435,6 +437,8 @@ var Shaders = {
           }
           points = new THREE.Mesh(baseGeometry, new THREE.MeshBasicMaterial({
                 color: 0xffffff,
+                transparent:true,
+                opacity:.5,
                 vertexColors: THREE.FaceColors,
                 morphTargets: true
               }));
