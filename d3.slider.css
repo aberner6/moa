@@ -77,6 +77,12 @@
 
 .d3-slider-axis text {
     font-size: 11px;
+    fill:white;
+}
+.label{
+
+    fill:white;
+
 }
 
 .d3-slider-vertical .d3-slider-handle {

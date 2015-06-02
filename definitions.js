@@ -27,7 +27,7 @@ function renderData()
 		.range([20, 15])
 	var durScale = d3.scale.linear()
 		.domain([0, durMax])
-		.range([1200, 800])
+		.range([2000, 800])
 	innerCircs = svg.selectAll("innerCircs").data(data);
 	outerCircs = svg.selectAll("outerCircs").data(data);
 
@@ -100,11 +100,11 @@ var ordNames = d3.scale.ordinal()
 	      	// 800)
 	      	function(d){
 	      	if(data.length>rMax){ rMax = data.length };
-	      	return durScale(data.length);
+	      	return durScale(data.length)+Math.random(1)*10;
 	      })
-		.style("opacity",1)
+		.style("opacity",.1)
         // .duration(800)
-	      .remove();
+	      // .remove();
 
 		// .transition()
 		// .duration(function(d){
@@ -141,7 +141,7 @@ var ordNames = d3.scale.ordinal()
 	      	// 800)
 	      	function(d){
 	      	if(data.length>rMax){ rMax = data.length };
-	      	return durScale(data.length);
+	      	return durScale(data.length)+Math.random(1)*10;;
 	      })
 	      		.style("stroke-width", 1)
 	      .style("stroke-opacity", 1e-6)

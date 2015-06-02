@@ -586,15 +586,70 @@
             "lat": 39.679783
         }
     ], 
-    "Thu May 14 2015 17:10:38 GMT-0400 (EDT)": [
+    "Thu May 14 2015 17:11:10 GMT-0400 (EDT)": [
+        {
+            "name": "University of Virginia-Main Campus", 
+            "unitid": 234076, 
+            "lon": -78.502597, 
+            "subjects": 2, 
+            "degrees": 8, 
+            "year": "Thu May 14 2015 17:11:10 GMT-0400 (EDT)", 
+            "lat": 38.036545
+        } 
+    ],
+    "Thu May 14 2015 17:10:00 GMT-0400 (EDT)": [
+        {
+            "name": "Wayne State University", 
+            "unitid": 172644, 
+            "lon": -83.072864, 
+            "subjects": 3, 
+            "degrees": 24, 
+            "year": "Thu May 14 2015 17:10:00 GMT-0400 (EDT)", 
+            "lat": 42.35861
+        } 
+    ],
+    "Thu May 14 2015 17:13:38 GMT-0400 (EDT)": [
+        {
+            "name": "George Mason University", 
+            "unitid": 232186, 
+            "lon": -77.30794, 
+            "subjects": 4, 
+            "degrees": 32, 
+            "year": "Thu May 14 2015 17:13:38 GMT-0400 (EDT)", 
+            "lat": 38.83088
+        } 
+    ],
+    "Thu May 14 2015 17:11:38 GMT-0400 (EDT)": [
+        {
+            "name": "Marywood University", 
+            "unitid": 213826, 
+            "lon": -75.633996, 
+            "subjects": 1, 
+            "degrees": 12, 
+            "year": "Thu May 14 2015 17:11:38 GMT-0400 (EDT)", 
+            "lat": 41.434978
+        } 
+        ],
+    "Thu May 14 2015 17:12:38 GMT-0400 (EDT)": [
         {
             "name": "Baylor University", 
             "unitid": 223232, 
             "lon": -97.119359, 
             "subjects": 1, 
             "degrees": 16, 
-            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "year": "Thu May 14 2015 17:12:38 GMT-0400 (EDT)", 
             "lat": 31.545956
+        } 
+        ],
+    "Thu May 14 2015 17:10:38 GMT-0400 (EDT)": [
+        {
+            "name": "Hollins University", 
+            "unitid": 232308, 
+            "lon": -79.942196, 
+            "subjects": 1, 
+            "degrees": 1, 
+            "year": "Thu May 14 2015 17:10:38 GMT-0400 (EDT)", 
+            "lat": 37.354629
         }, 
         {
             "name": "Marquette University", 

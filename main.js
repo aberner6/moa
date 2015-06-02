@@ -76,18 +76,18 @@ var imgHeight = 1025, imgWidth = 1538,      // Image dimensions (don't change th
     // translate0 = [width / 2, height / 2.8], scale0 = initialZoom;  // Initial offset & scale
     translate0 = [0, -200], scale0 = 1;  // Initial offset & scale
 
-svg.append("rect")
-    .attr("class", "overlay")
-    .attr("width", width + "px")
-    .attr("height", height + "px");
+// svg.append("rect")
+//     .attr("class", "overlay")
+//     .attr("width", width + "px")
+//     .attr("height", height + "px");
 
-svg = svg.append("g")
-    .attr("transform", "translate(" + translate0 + ")")
+// svg = svg.append("g")
+//     .attr("transform", "translate(" + translate0 + ")")
     	//scale(" + scale0 + ")")
     
     // .call(d3.behavior.zoom().scaleExtent([1,8]).on("zoom", zoomIt))
     // .call(d3.behavior.zoom().scaleExtent([1, 8]).on("zoom", zoom))
-  .append("g");
+  // .append("g");
 
 // svg.append("image")
 //     .attr("width",  width + "px")
@@ -150,9 +150,9 @@ d3.json("world.json", function(error, world) {
 		.classed('world', true)
 		.datum( topojson.feature(world, world.objects.land) )
 		.attr("d", path)
-		.attr("stroke","rgb(125,95,95)")//"#eb5424")//"rgb(154,54,54)")
+		.attr("stroke","rgba(139, 139, 139, 0.41)")//"rgb(154,54,54)")
 		.attr("stroke-width",1)
-		.attr("fill","black")
+		// .attr("fill","black")
 
 	redraw();
 	setInterval(redraw, 5 * 60 * 1000);

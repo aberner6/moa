@@ -15,6 +15,10 @@
 		  bottom: 20px;
 		  width: 600px;
 		  height: 50px;
+		  color: white;
+		}
+		body{
+			background-color: black;
 		}
 	</style>
 	<body>
@@ -42,7 +46,8 @@ var lastYear = "Thu May 14 2015 17:10:38 GMT-0400 (EDT)";
 			var svg = d3.select("body")
 						.append("svg")
 						.attr("width", w)
-						.attr("height", h);
+						.attr("height", h)
+						.style("background-style","black")
 
 			//Load in GeoJSON data
 			d3.json("us-states.json", function(json) {
@@ -52,8 +57,10 @@ var lastYear = "Thu May 14 2015 17:10:38 GMT-0400 (EDT)";
 				   .enter()
 				   .append("path")
 				   .attr("d", path)
-				   .style("fill", "white")		// background color
-				   .style("stroke", "yellow");
+				   .style("fill", "black")		// background color
+				   .style("stroke", "lightgray")
+				   .style("stroke-opacity",.5)
+				   // .style("stroke-width",.2)
 			});
 
 			var years = {};
@@ -78,27 +85,30 @@ var lastYear = "Thu May 14 2015 17:10:38 GMT-0400 (EDT)";
 				var data = years[year];
 				console.log("drawYear " + year);
 console.log(data);
-				svg.selectAll("text").remove();
-				svg.append("text")
-					.attr("class", "text")
-					.attr("x", w/2)
-					.attr("y", h/2)
-					.text(year)
-					.attr("fill", "black");
+				// svg.selectAll("text").remove();
+				// svg.append("text")
+				// 	.attr("class", "text")
+				// 	.attr("x", w/2)
+				// 	.attr("y", h/2)
+				// 	.text(year)
+				// 	.attr("fill", "black");
 
 				svg.selectAll("circle")
 				   .data(data)
 				   .enter()
 				   .append("circle")
+				   // .attr("r",0)
 				   .attr("cx", function(d) {
 					   return projection([d.lon, d.lat])[0];
 				   })
 				   .attr("cy", function(d) {
 					   return projection([d.lon, d.lat])[1];
 				   })
+				   				   .attr("fill", "teal")
+				   // .transition()
+				   // .duration(2000)
 				   .attr("r", function(d) { return 2 + (10 * (d.degrees / 100.0))})
-				   .attr("fill", "black")
-				   .attr("opacity", 0.7);
+				   .attr("opacity", 0.5);
 			}				
 				}
 
@@ -143,7 +153,7 @@ d3.select("#slider")
 	  		// }
 			})
 		.playButton(true) // (6)
-		.playbackRate(0.2)
+		.playbackRate(0.9)
 		.loop(true)    
 	);
 // d3.select("#slider") // (1)
